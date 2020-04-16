@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		02DD691AA84EBB21CD877665 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		02DD691AA84EBB21CD877665 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		43B4E5859F992813378E079A /* Pods-fuikit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuikit_Example.release.xcconfig"; path = "Target Support Files/Pods-fuikit_Example/Pods-fuikit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		47C8D39B403F20466A641D2E /* Pods-fuikit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuikit_Example.debug.xcconfig"; path = "Target Support Files/Pods-fuikit_Example/Pods-fuikit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4EF5BB9634912291FA0D8D6C /* Pods_fuikit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fuikit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,8 +45,8 @@
 		6171F07F001756F9FF9E21D4 /* Pods-fuikit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuikit_Tests.release.xcconfig"; path = "Target Support Files/Pods-fuikit_Tests/Pods-fuikit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		7B579A30357EF12D778B30AE /* Pods_fuikit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fuikit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84DA5201432BFE403D1353D /* Pods-fuikit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuikit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-fuikit_Tests/Pods-fuikit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F0D2E8BF43762283A81D513D /* fuikit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = fuikit.podspec; path = ../fuikit.podspec; sourceTree = "<group>"; };
-		FCD95A86A2EDC1FCD88FAF81 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F0D2E8BF43762283A81D513D /* fuikit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = fuikit.podspec; path = ../fuikit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		FCD95A86A2EDC1FCD88FAF81 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,7 +147,6 @@
 				C84DA5201432BFE403D1353D /* Pods-fuikit_Tests.debug.xcconfig */,
 				6171F07F001756F9FF9E21D4 /* Pods-fuikit_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -228,6 +227,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
