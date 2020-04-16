@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'fuikit_Example' do
+  pod 'fuikit', :path => '../'
+
+  target 'fuikit_Tests' do
+    inherit! :search_paths
+
+    pod 'FBSnapshotTestCase' , '~> 2.1.4'
+  end
+end
