@@ -19,6 +19,7 @@
 		4925D2F82448A7F1003E8411 /* FunctionalSearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925D2F42448A7F1003E8411 /* FunctionalSearchBarDelegate.swift */; };
 		4925D2F92448A7F1003E8411 /* FunctionalTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925D2F52448A7F1003E8411 /* FunctionalTableViewDelegate.swift */; };
 		4925D2FA2448A7F1003E8411 /* FunctionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925D2F62448A7F1003E8411 /* FunctionalViewController.swift */; };
+		4969631B249D57F700EE2B43 /* FUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969631A249D57F700EE2B43 /* FUITextFieldDelegate.swift */; };
 		57D562492984FF6C25F6EACC3E02D0EC /* fuikit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86E8C5C36E92A3AA429C7249823577DE /* fuikit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EDEDA09F62DC4E9CF7ACB34C9D9B43B /* fuikit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAA2AA80B172B328ED04B21A84A6B1B /* fuikit-dummy.m */; };
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
@@ -84,6 +85,7 @@
 		4925D2F42448A7F1003E8411 /* FunctionalSearchBarDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunctionalSearchBarDelegate.swift; path = fuikit/Classes/FunctionalSearchBarDelegate.swift; sourceTree = "<group>"; };
 		4925D2F52448A7F1003E8411 /* FunctionalTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunctionalTableViewDelegate.swift; path = fuikit/Classes/FunctionalTableViewDelegate.swift; sourceTree = "<group>"; };
 		4925D2F62448A7F1003E8411 /* FunctionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunctionalViewController.swift; path = fuikit/Classes/FunctionalViewController.swift; sourceTree = "<group>"; };
+		4969631A249D57F700EE2B43 /* FUITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FUITextFieldDelegate.swift; path = fuikit/Classes/FUITextFieldDelegate.swift; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		527B39D693427D722657AEC5E4ED6A4A /* Pods-fuikit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fuikit_Example-dummy.m"; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -359,6 +361,7 @@
 				4925D2F62448A7F1003E8411 /* FunctionalViewController.swift */,
 				4925D2F42448A7F1003E8411 /* FunctionalSearchBarDelegate.swift */,
 				4925D2F52448A7F1003E8411 /* FunctionalTableViewDelegate.swift */,
+				4969631A249D57F700EE2B43 /* FUITextFieldDelegate.swift */,
 				BBBD757C5DD33888756916408BD8329D /* Pod */,
 				8667CED739D809881905460D4415386C /* Support Files */,
 			);
@@ -560,6 +563,7 @@
 				4925D2F72448A7F1003E8411 /* FunctionalTableViewController.swift in Sources */,
 				5EDEDA09F62DC4E9CF7ACB34C9D9B43B /* fuikit-dummy.m in Sources */,
 				4925D2F92448A7F1003E8411 /* FunctionalTableViewDelegate.swift in Sources */,
+				4969631B249D57F700EE2B43 /* FUITextFieldDelegate.swift in Sources */,
 				4925D2F82448A7F1003E8411 /* FunctionalSearchBarDelegate.swift in Sources */,
 				4925D2FA2448A7F1003E8411 /* FunctionalViewController.swift in Sources */,
 			);
