@@ -77,11 +77,13 @@ open class FunctionalViewController: UIViewController {
         onUpdateViewConstraints?(self)
     }
     
+    @available(iOS 11.0, *)
     open override func viewLayoutMarginsDidChange() {
         super.viewLayoutMarginsDidChange()
         onViewLayoutMarginsDidChange?(self)
     }
     
+    @available(iOS 11.0, *)
     open override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
         onViewSafeAreaInsetsDidChange?(self)

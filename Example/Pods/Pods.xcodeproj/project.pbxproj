@@ -20,6 +20,9 @@
 		4925D2F92448A7F1003E8411 /* FunctionalTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925D2F52448A7F1003E8411 /* FunctionalTableViewDelegate.swift */; };
 		4925D2FA2448A7F1003E8411 /* FunctionalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4925D2F62448A7F1003E8411 /* FunctionalViewController.swift */; };
 		4969631B249D57F700EE2B43 /* FUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4969631A249D57F700EE2B43 /* FUITextFieldDelegate.swift */; };
+		49CB438524A2244F004AF6F7 /* FUICentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB438424A2244F004AF6F7 /* FUICentralManagerDelegate.swift */; };
+		49CB438824A2248B004AF6F7 /* FUIPeripheralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB438724A2248B004AF6F7 /* FUIPeripheralManagerDelegate.swift */; };
+		49CB438A24A224A5004AF6F7 /* FUIPeripheralDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CB438924A224A5004AF6F7 /* FUIPeripheralDelegate.swift */; };
 		57D562492984FF6C25F6EACC3E02D0EC /* fuikit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 86E8C5C36E92A3AA429C7249823577DE /* fuikit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5EDEDA09F62DC4E9CF7ACB34C9D9B43B /* fuikit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BBAA2AA80B172B328ED04B21A84A6B1B /* fuikit-dummy.m */; };
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
@@ -86,6 +89,9 @@
 		4925D2F52448A7F1003E8411 /* FunctionalTableViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunctionalTableViewDelegate.swift; path = fuikit/Classes/FunctionalTableViewDelegate.swift; sourceTree = "<group>"; };
 		4925D2F62448A7F1003E8411 /* FunctionalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FunctionalViewController.swift; path = fuikit/Classes/FunctionalViewController.swift; sourceTree = "<group>"; };
 		4969631A249D57F700EE2B43 /* FUITextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FUITextFieldDelegate.swift; path = fuikit/Classes/FUITextFieldDelegate.swift; sourceTree = "<group>"; };
+		49CB438424A2244F004AF6F7 /* FUICentralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FUICentralManagerDelegate.swift; sourceTree = "<group>"; };
+		49CB438724A2248B004AF6F7 /* FUIPeripheralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FUIPeripheralManagerDelegate.swift; path = fuikit/Classes/Bluetooth/FUIPeripheralManagerDelegate.swift; sourceTree = "<group>"; };
+		49CB438924A224A5004AF6F7 /* FUIPeripheralDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FUIPeripheralDelegate.swift; path = fuikit/Classes/Bluetooth/FUIPeripheralDelegate.swift; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		527B39D693427D722657AEC5E4ED6A4A /* Pods-fuikit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fuikit_Example-dummy.m"; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,6 +223,16 @@
 			);
 			name = "Pods-fuikit_Example";
 			path = "Target Support Files/Pods-fuikit_Example";
+			sourceTree = "<group>";
+		};
+		49CB438624A2245A004AF6F7 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				49CB438424A2244F004AF6F7 /* FUICentralManagerDelegate.swift */,
+				49CB438724A2248B004AF6F7 /* FUIPeripheralManagerDelegate.swift */,
+				49CB438924A224A5004AF6F7 /* FUIPeripheralDelegate.swift */,
+			);
+			name = Bluetooth;
 			sourceTree = "<group>";
 		};
 		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
@@ -357,6 +373,7 @@
 		FA2F7B6E3D7620C858FFE9E44674955D /* fuikit */ = {
 			isa = PBXGroup;
 			children = (
+				49CB438624A2245A004AF6F7 /* Bluetooth */,
 				4925D2F32448A7F1003E8411 /* FunctionalTableViewController.swift */,
 				4925D2F62448A7F1003E8411 /* FunctionalViewController.swift */,
 				4925D2F42448A7F1003E8411 /* FunctionalSearchBarDelegate.swift */,
@@ -561,11 +578,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4925D2F72448A7F1003E8411 /* FunctionalTableViewController.swift in Sources */,
+				49CB438A24A224A5004AF6F7 /* FUIPeripheralDelegate.swift in Sources */,
 				5EDEDA09F62DC4E9CF7ACB34C9D9B43B /* fuikit-dummy.m in Sources */,
 				4925D2F92448A7F1003E8411 /* FunctionalTableViewDelegate.swift in Sources */,
 				4969631B249D57F700EE2B43 /* FUITextFieldDelegate.swift in Sources */,
 				4925D2F82448A7F1003E8411 /* FunctionalSearchBarDelegate.swift in Sources */,
 				4925D2FA2448A7F1003E8411 /* FunctionalViewController.swift in Sources */,
+				49CB438524A2244F004AF6F7 /* FUICentralManagerDelegate.swift in Sources */,
+				49CB438824A2248B004AF6F7 /* FUIPeripheralManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
