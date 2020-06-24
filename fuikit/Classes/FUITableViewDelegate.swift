@@ -1,5 +1,5 @@
 //
-//  FunctionalTableDelegate.swift
+//  FUITableViewDelegate.swift
 //  fuikit
 //
 //  Created by Elliot Schrock on 6/9/18.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class FunctionalTableDelegate: NSObject, UITableViewDelegate {
+open class FUITableViewDelegate: NSObject, UITableViewDelegate {
     public var onSelect: (UITableView, IndexPath) -> Void = { _,_ in }
     public var onWillDisplay: (UITableViewCell, UITableView, IndexPath) -> Void = { _,_,_ in }
     

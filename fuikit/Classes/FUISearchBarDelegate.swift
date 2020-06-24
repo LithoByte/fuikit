@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class FunctionalSearchBarDelegate: NSObject, UISearchBarDelegate {
+open class FUISearchBarDelegate: NSObject, UISearchBarDelegate {
     public var onSearchBarShouldBeginEditing: ((UISearchBar) -> Bool)?
     public var onSearchBarTextDidBeginEditing: ((UISearchBar) -> Void)?
     public var onSearchBarShouldEndEditing: ((UISearchBar) -> Bool)?
