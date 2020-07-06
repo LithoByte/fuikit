@@ -14,7 +14,6 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		6442F23B24B3BEFD00DE25D5 /* FUITableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6442F23924B3BEFD00DE25D5 /* FUITableViewViewController.xib */; };
 		C294356ED1B14D8582F4D58F /* Pods_fuikit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B579A30357EF12D778B30AE /* Pods_fuikit_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6171F07F001756F9FF9E21D4 /* Pods-fuikit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuikit_Tests.release.xcconfig"; path = "Target Support Files/Pods-fuikit_Tests/Pods-fuikit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6442F23A24B3BEFD00DE25D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/FUITableViewViewController.xib; sourceTree = "<group>"; };
 		7B579A30357EF12D778B30AE /* Pods_fuikit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fuikit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C84DA5201432BFE403D1353D /* Pods-fuikit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fuikit_Tests.debug.xcconfig"; path = "Target Support Files/Pods-fuikit_Tests/Pods-fuikit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		F0D2E8BF43762283A81D513D /* fuikit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = fuikit.podspec; path = ../fuikit.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -101,7 +99,6 @@
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
-				6442F23924B3BEFD00DE25D5 /* FUITableViewViewController.xib */,
 			);
 			name = "Example for fuikit";
 			path = fuikit;
@@ -251,7 +248,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				6442F23B24B3BEFD00DE25D5 /* FUITableViewViewController.xib in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
 			);
@@ -392,14 +388,6 @@
 				607FACDF1AFB9204008FA782 /* Base */,
 			);
 			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-		6442F23924B3BEFD00DE25D5 /* FUITableViewViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6442F23A24B3BEFD00DE25D5 /* Base */,
-			);
-			name = FUITableViewViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
