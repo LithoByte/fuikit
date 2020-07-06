@@ -31,6 +31,7 @@ TODO: Add long description of the pod here.
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'fuikit/Classes/**/*'
+  s.resources = 'fuikit/**/*.xib'
   
   # s.resource_bundles = {
   #   'fuikit' => ['fuikit/Assets/*.png']
