@@ -1,5 +1,5 @@
 //
-//  FUITableViewController.swift
+//  FUITableViewViewController.swift
 //  fuikit
 //
 //  Created by Eddy Varela on 6/24/20.
