@@ -26,7 +26,6 @@ public class FUITextViewDelegate: NSObject, UITextViewDelegate {
     public func textViewDidChange(_ textView: UITextView) { onTextViewDidChange?(textView) }
     public func textViewDidChangeSelection(_ textView: UITextView) { onTextViewDidChangeSelection?(textView) }
     
-    
     public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         onShouldChangeTextInRange?(textView, range, text) ?? true
     }
