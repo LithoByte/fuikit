@@ -1,5 +1,5 @@
 //
-//  FunctionalViewController.swift
+//  FUIViewController.swift
 //  fuikit
 //
 //  Created by Elliot Schrock on 10/31/19.
@@ -7,21 +7,21 @@
 
 import UIKit
 
-open class FunctionalViewController: UIViewController {
-    public var onLoadView: ((FunctionalViewController) -> Void)?
-    public var onViewDidLoad: ((FunctionalViewController) -> Void)?
-    public var onViewWillAppear: ((FunctionalViewController, Bool) -> Void)?
-    public var onViewDidAppear: ((FunctionalViewController, Bool) -> Void)?
-    public var onViewWillDisappear: ((FunctionalViewController, Bool) -> Void)?
-    public var onViewDidDisappear: ((FunctionalViewController, Bool) -> Void)?
+open class FUIViewController: UIViewController {
+    public var onLoadView: ((FUIViewController) -> Void)?
+    public var onViewDidLoad: ((FUIViewController) -> Void)?
+    public var onViewWillAppear: ((FUIViewController, Bool) -> Void)?
+    public var onViewDidAppear: ((FUIViewController, Bool) -> Void)?
+    public var onViewWillDisappear: ((FUIViewController, Bool) -> Void)?
+    public var onViewDidDisappear: ((FUIViewController, Bool) -> Void)?
     
-    public var onShouldPerformSegue: ((FunctionalViewController, String, Any?) -> Bool)?
-    public var onPrepare: ((FunctionalViewController, UIStoryboardSegue, Any?) -> Void)?
-    public var onViewWillLayoutSubviews: ((FunctionalViewController) -> Void)?
-    public var onViewDidLayoutSubviews: ((FunctionalViewController) -> Void)?
-    public var onUpdateViewConstraints: ((FunctionalViewController) -> Void)?
-    public var onViewLayoutMarginsDidChange: ((FunctionalViewController) -> Void)?
-    public var onViewSafeAreaInsetsDidChange: ((FunctionalViewController) -> Void)?
+    public var onShouldPerformSegue: ((FUIViewController, String, Any?) -> Bool)?
+    public var onPrepare: ((FUIViewController, UIStoryboardSegue, Any?) -> Void)?
+    public var onViewWillLayoutSubviews: ((FUIViewController) -> Void)?
+    public var onViewDidLayoutSubviews: ((FUIViewController) -> Void)?
+    public var onUpdateViewConstraints: ((FUIViewController) -> Void)?
+    public var onViewLayoutMarginsDidChange: ((FUIViewController) -> Void)?
+    public var onViewSafeAreaInsetsDidChange: ((FUIViewController) -> Void)?
     
     open override func loadView() {
         onLoadView?(self)
@@ -77,11 +77,13 @@ open class FunctionalViewController: UIViewController {
         onUpdateViewConstraints?(self)
     }
     
+    @available(iOS 11.0, *)
     open override func viewLayoutMarginsDidChange() {
         super.viewLayoutMarginsDidChange()
         onViewLayoutMarginsDidChange?(self)
     }
     
+    @available(iOS 11.0, *)
     open override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
         onViewSafeAreaInsetsDidChange?(self)

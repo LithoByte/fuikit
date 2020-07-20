@@ -1,34 +1,34 @@
 //
-//  FunctionalTableViewController.swift
+//  FUITableViewViewController.swift
 //  fuikit
 //
-//  Created by Elliot Schrock on 3/9/20.
+//  Created by Eddy Varela on 6/24/20.
 //
-
 import UIKit
 
-open class FunctionalTableViewViewController: UIViewController {
+open class FUITableViewViewController: UIViewController {
     @IBOutlet public var tableView: UITableView?
-    public var onLoadView: ((FunctionalTableViewViewController) -> Void)?
-    public var onViewDidLoad: ((FunctionalTableViewViewController) -> Void)?
-    public var onViewWillAppear: ((FunctionalTableViewViewController, Bool) -> Void)?
-    public var onViewDidAppear: ((FunctionalTableViewViewController, Bool) -> Void)?
-    public var onViewWillDisappear: ((FunctionalTableViewViewController, Bool) -> Void)?
-    public var onViewDidDisappear: ((FunctionalTableViewViewController, Bool) -> Void)?
     
-    public var onShouldPerformSegue: ((FunctionalTableViewViewController, String, Any?) -> Bool)?
-    public var onPrepare: ((FunctionalTableViewViewController, UIStoryboardSegue, Any?) -> Void)?
-    public var onViewWillLayoutSubviews: ((FunctionalTableViewViewController) -> Void)?
-    public var onViewDidLayoutSubviews: ((FunctionalTableViewViewController) -> Void)?
-    public var onUpdateViewConstraints: ((FunctionalTableViewViewController) -> Void)?
-    public var onViewLayoutMarginsDidChange: ((FunctionalTableViewViewController) -> Void)?
-    public var onViewSafeAreaInsetsDidChange: ((FunctionalTableViewViewController) -> Void)?
+    public var onLoadView: ((FUITableViewViewController) -> Void)?
+    public var onViewDidLoad: ((FUITableViewViewController) -> Void)?
+    public var onViewWillAppear: ((FUITableViewViewController, Bool) -> Void)?
+    public var onViewDidAppear: ((FUITableViewViewController, Bool) -> Void)?
+    public var onViewWillDisappear: ((FUITableViewViewController, Bool) -> Void)?
+    public var onViewDidDisappear: ((FUITableViewViewController, Bool) -> Void)?
+    
+    public var onShouldPerformSegue: ((FUITableViewViewController, String, Any?) -> Bool )?
+    public var onPrepare: ((FUITableViewViewController, UIStoryboardSegue, Any?) -> Void)?
+    public var onViewWillLayoutSubviews: ((FUITableViewViewController) -> Void)?
+    public var onViewDidLayoutSubviews: ((FUITableViewViewController) -> Void)?
+    public var onUpdateViewConstraints: ((FUITableViewViewController) -> Void)?
+    public var onViewLayoutMarginsDidChange: ((FUITableViewViewController) -> Void)?
+    public var onViewSafeAreaInsetsDidChange: ((FUITableViewViewController) -> Void)?
     
     open override func loadView() {
         onLoadView?(self)
         super.loadView()
     }
-
+    
     open override func viewDidLoad() {
         super.viewDidLoad()
         onViewDidLoad?(self)
@@ -43,7 +43,7 @@ open class FunctionalTableViewViewController: UIViewController {
         super.viewDidAppear(animated)
         onViewDidAppear?(self, animated)
     }
-
+    
     open override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         onViewWillDisappear?(self, animated)
@@ -78,13 +78,16 @@ open class FunctionalTableViewViewController: UIViewController {
         onUpdateViewConstraints?(self)
     }
     
+    @available(iOS 11.0, *)
     open override func viewLayoutMarginsDidChange() {
         super.viewLayoutMarginsDidChange()
         onViewLayoutMarginsDidChange?(self)
     }
     
+    @available(iOS 11.0, *)
     open override func viewSafeAreaInsetsDidChange() {
         super.viewSafeAreaInsetsDidChange()
         onViewSafeAreaInsetsDidChange?(self)
     }
+    
 }
