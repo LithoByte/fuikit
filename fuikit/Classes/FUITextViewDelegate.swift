@@ -37,5 +37,4 @@ public class FUITextViewDelegate: NSObject, UITextViewDelegate {
     public func textView(_ textView: UITextView, shouldInteractWith textAttachment: NSTextAttachment, in characterRange: NSRange, interaction: UITextItemInteraction) -> Bool {
         onShouldInteractWithTextAttachment?(textView, textAttachment, characterRange, interaction) ?? true
     }
-    
 }
