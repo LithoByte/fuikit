@@ -18,6 +18,6 @@
   "platforms": {
     "ios": "11.0"
   },
-  "source_files": "fuikit/Classes/**/*",
+  "source_files": "fuikit/Classes/**/*.swift",
   "resources": "fuikit/**/*.xib"
 }
