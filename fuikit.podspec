@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'fuikit'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'fuikit makes standard iOS classes easy to use functionally.'
   s.swift_versions   = ['4.0', '4.1', '4.2', '5.0', '5.1', '5.2']
 
@@ -19,7 +19,9 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+fuikit makes standard iOS classes easy to use with Functional Programming by adding var function properties.
+
+For instance, instead of subclassing UIViewController, you could use FUIViewController and set the onViewDidLoad property to whatever you'd like.
                        DESC
 
   s.homepage         = 'https://github.com/ThryvInc/fuikit'
