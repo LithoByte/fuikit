@@ -9,9 +9,9 @@ import UIKit
 
 /**
  This class implements UITableViewDelegate, with some important exceptions. There are several functions in UITableViewDelegate that
- merely implementing will change the behavior of the UITableView. These functions include the height or estimated height of a row or other view
+ merely implementing will change the behavior of the UITableView. These functions include the height or estimated height of a row, header, or footer
  since these functions take precedence over static values you can provide the table view and there's no way to provide an ignored value if you
- implement them.
+ implement them, as well as the functions for providing a header or footer view, for the same reasons.
  */
 @objc open class FUITableViewDelegate: NSObject, UITableViewDelegate {
     public var onSelect: (UITableView, IndexPath) -> Void = { _,_ in }
@@ -22,9 +22,6 @@ import UIKit
     public var onDidEndDisplaying: (UITableView, UITableViewCell, IndexPath) -> Void = { _, _, _ in }
     public var onDidEndDisplayingHeaderView: (UITableView, UIView, Int) -> Void = { _, _, _ in }
     public var onDidEndDisplayingFooterView: (UITableView, UIView, Int) -> Void = { _, _, _ in }
-    
-    public var onViewForHeaderInSection: (UITableView, Int) -> UIView? = { _, _ in return nil }
-    public var onViewForFooterInSection: (UITableView, Int) -> UIView? = { _, _ in return nil }
     
     public var onAccessoryButtonTappedForRowWith: (UITableView, IndexPath) -> Void = { _, _ in }
     
@@ -77,8 +74,6 @@ import UIKit
                 onDidEndDisplaying: @escaping (UITableView, UITableViewCell, IndexPath) -> Void = { _, _, _ in },
                 onDidEndDisplayingHeaderView: @escaping (UITableView, UIView, Int) -> Void = { _, _, _ in },
                 onDidEndDisplayingFooterView: @escaping (UITableView, UIView, Int) -> Void = { _, _, _ in },
-                onViewForHeaderInSection: @escaping (UITableView, Int) -> UIView? = { _, _ in return nil },
-                onViewForFooterInSection: @escaping (UITableView, Int) -> UIView? = { _, _ in return nil },
                 onAccessoryButtonTappedForRowWith: @escaping (UITableView, IndexPath) -> Void = { _, _ in },
                 onShouldHighlightRowAt: @escaping (UITableView, IndexPath) -> Bool = { _, _ in return true },
                 onDidHighlightRowAt: @escaping (UITableView, IndexPath) -> Void = { _, _ in },
@@ -113,8 +108,6 @@ import UIKit
         self.onDidEndDisplaying = onDidEndDisplaying
         self.onDidEndDisplayingHeaderView = onDidEndDisplayingHeaderView
         self.onDidEndDisplayingFooterView = onDidEndDisplayingFooterView
-        self.onViewForHeaderInSection = onViewForHeaderInSection
-        self.onViewForFooterInSection = onViewForFooterInSection
         self.onAccessoryButtonTappedForRowWith = onAccessoryButtonTappedForRowWith
         self.onShouldHighlightRowAt = onShouldHighlightRowAt
         self.onDidHighlightRowAt = onDidHighlightRowAt
@@ -164,12 +157,6 @@ import UIKit
     }
     @objc open func tableView(_ tableView: UITableView, didEndDisplayingFooterView view: UIView, forSection section: Int) {
         onDidEndDisplayingFooterView(tableView, view, section)
-    }
-    @objc open func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return onViewForHeaderInSection(tableView, section)
-    }
-    @objc open func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        return onViewForFooterInSection(tableView, section)
     }
     @objc open func tableView(_ tableView: UITableView, accessoryButtonTappedForRowWith indexPath: IndexPath) {
         onAccessoryButtonTappedForRowWith(tableView, indexPath)

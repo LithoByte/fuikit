@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'fuikit'
-  s.version          = '0.0.4'
+  s.version          = '0.0.6'
   s.summary          = 'fuikit makes standard iOS classes easy to use functionally.'
   s.swift_versions   = ['4.0', '4.1', '4.2', '5.0', '5.1', '5.2']
 
