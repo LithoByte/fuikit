@@ -20,6 +20,8 @@
 		332E915770B24CEB84A4353DAAF3A955 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		490C75A524EEE72B0025323A /* FUITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490C75A424EEE72B0025323A /* FUITableViewDataSource.swift */; };
+		49CBFAE02540FD640007D7E6 /* FUICollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49CBFADE2540FD640007D7E6 /* FUICollectionViewViewController.swift */; };
+		49CBFAE12540FD640007D7E6 /* FUICollectionViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49CBFADF2540FD640007D7E6 /* FUICollectionViewViewController.xib */; };
 		5DEFA5DD100A1D30ADD1332FBFAC5301 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BD4ED544B638D07C7D755AF1C27116A /* Foundation.framework */; };
 		5E022861B64E1E0215C4848393D71CD4 /* fuikit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F784B90FD647380F937DBEC7013F4541 /* fuikit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AE239C5D116E1C06F5705699FB9EAF0 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E601BD54DA9BF4071437E60125281FA /* XCTest.framework */; };
@@ -87,6 +89,8 @@
 		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		482C734233F7BE78A0F365E7E6C1263B /* Pods-fuikit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fuikit_Tests-umbrella.h"; sourceTree = "<group>"; };
 		490C75A424EEE72B0025323A /* FUITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FUITableViewDataSource.swift; path = fuikit/Classes/FUITableViewDataSource.swift; sourceTree = "<group>"; };
+		49CBFADE2540FD640007D7E6 /* FUICollectionViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FUICollectionViewViewController.swift; path = fuikit/Classes/FUICollectionViewViewController.swift; sourceTree = "<group>"; };
+		49CBFADF2540FD640007D7E6 /* FUICollectionViewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = FUICollectionViewViewController.xib; path = fuikit/Classes/FUICollectionViewViewController.xib; sourceTree = "<group>"; };
 		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
 		527B39D693427D722657AEC5E4ED6A4A /* Pods-fuikit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fuikit_Example-dummy.m"; sourceTree = "<group>"; };
 		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -203,6 +207,8 @@
 		24B2163BE2F4C5751E03EF63C3D07E15 /* fuikit */ = {
 			isa = PBXGroup;
 			children = (
+				49CBFADE2540FD640007D7E6 /* FUICollectionViewViewController.swift */,
+				49CBFADF2540FD640007D7E6 /* FUICollectionViewViewController.xib */,
 				E6901DA85C622EB301809420F128F853 /* FUISearchBarDelegate.swift */,
 				490C75A424EEE72B0025323A /* FUITableViewDataSource.swift */,
 				72AAFC315F1F746A6E76B40F4AB9AB6A /* FUITableViewDelegate.swift */,
@@ -562,6 +568,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49CBFAE12540FD640007D7E6 /* FUICollectionViewViewController.xib in Resources */,
 				1A028068E627CB926023339A991C8FF2 /* FUITableViewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -594,6 +601,7 @@
 				938188505E814DB0634C978F5481F017 /* FUISearchBarDelegate.swift in Sources */,
 				02FE7322819648DA0B6822D88C09B928 /* FUITableViewDelegate.swift in Sources */,
 				FA7323CDA131A062259AC7FD657D56D1 /* FUITableViewViewController.swift in Sources */,
+				49CBFAE02540FD640007D7E6 /* FUICollectionViewViewController.swift in Sources */,
 				0B667923413874FA28BCC2B6D109767D /* FUITextFieldDelegate.swift in Sources */,
 				210084EBF5BEDD9155AC4295D0C7384F /* FUITextViewDelegate.swift in Sources */,
 				8A28B526F30AD3FCFD98D3E238342E9C /* FUIViewController.swift in Sources */,
