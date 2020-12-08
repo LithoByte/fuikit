@@ -4,7 +4,7 @@ PODS:
   - FBSnapshotTestCase/Core (2.1.4)
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
-  - fuikit (0.1.0)
+  - fuikit (0.0.7)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  fuikit: d63a03b02599720f690f3a7cc063289d5656a59b
+  fuikit: 9e4c918280be6b292e4564564dd11495e5f91861
 
 PODFILE CHECKSUM: cc297152d943cf28969063374be8c153718b6a9b
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.9.3
