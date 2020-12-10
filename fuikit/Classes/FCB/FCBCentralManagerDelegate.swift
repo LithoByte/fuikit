@@ -1,14 +1,14 @@
 //
-//  FUICBCentralManagerDelegate.swift
-//  FBSnapshotTestCase
+//  FCBCentralManagerDelegate.swift
+//  fuikit
 //
-//  Created by William Collins on 12/7/20.
+//  Created by Calvin Collins on 12/7/20.
 //
 
 import Foundation
 import CoreBluetooth
 
-open class FUICentralManagerDelegate: NSObject, CBCentralManagerDelegate {
+open class FCentralManagerDelegate: NSObject, CBCentralManagerDelegate {
   /**
    This class implements CBCentralManagerDelegate.
 

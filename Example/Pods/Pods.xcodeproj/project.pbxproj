@@ -30,17 +30,17 @@
 		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
 		8D8732004ED1555C9EB041829179D40B /* FUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54162F9DBFC23B93BEB09590258D9DE7 /* FUITextFieldDelegate.swift */; };
 		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		980FCB6C257F1CD300C5798E /* FUICLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB6B257F1CD300C5798E /* FUICLLocationManagerDelegate.swift */; };
-		980FCB6D257F1CD300C5798E /* FUICLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB6B257F1CD300C5798E /* FUICLLocationManagerDelegate.swift */; };
-		980FCB6E257F1CD300C5798E /* FUICLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB6B257F1CD300C5798E /* FUICLLocationManagerDelegate.swift */; };
-		980FCB6F257F1CD300C5798E /* FUICLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB6B257F1CD300C5798E /* FUICLLocationManagerDelegate.swift */; };
-		980FCB73257F5E6300C5798E /* FUICBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB72257F5E6300C5798E /* FUICBCentralManagerDelegate.swift */; };
-		980FCB75257F614200C5798E /* FUICBPeripheralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB74257F614200C5798E /* FUICBPeripheralManagerDelegate.swift */; };
-		980FCB78257F6D4300C5798E /* FUICBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB72257F5E6300C5798E /* FUICBCentralManagerDelegate.swift */; };
-		980FCB79257F6D4400C5798E /* FUICBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB72257F5E6300C5798E /* FUICBCentralManagerDelegate.swift */; };
-		980FCB7A257F6D4400C5798E /* FUICBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB72257F5E6300C5798E /* FUICBCentralManagerDelegate.swift */; };
-		980FCB7B257F6D4C00C5798E /* FUICBPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB76257F63ED00C5798E /* FUICBPeripheralManager.swift */; };
-		980FCB7C257F6D4F00C5798E /* FUICBPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB76257F63ED00C5798E /* FUICBPeripheralManager.swift */; };
+		980FCB6C257F1CD300C5798E /* FCLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB6B257F1CD300C5798E /* FCLLocationManagerDelegate.swift */; };
+		980FCB6D257F1CD300C5798E /* FCLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB6B257F1CD300C5798E /* FCLLocationManagerDelegate.swift */; };
+		980FCB6E257F1CD300C5798E /* FCLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB6B257F1CD300C5798E /* FCLLocationManagerDelegate.swift */; };
+		980FCB6F257F1CD300C5798E /* FCLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB6B257F1CD300C5798E /* FCLLocationManagerDelegate.swift */; };
+		980FCB73257F5E6300C5798E /* FCBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB72257F5E6300C5798E /* FCBCentralManagerDelegate.swift */; };
+		980FCB75257F614200C5798E /* FCBPeripheralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB74257F614200C5798E /* FCBPeripheralManagerDelegate.swift */; };
+		980FCB78257F6D4300C5798E /* FCBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB72257F5E6300C5798E /* FCBCentralManagerDelegate.swift */; };
+		980FCB79257F6D4400C5798E /* FCBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB72257F5E6300C5798E /* FCBCentralManagerDelegate.swift */; };
+		980FCB7A257F6D4400C5798E /* FCBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB72257F5E6300C5798E /* FCBCentralManagerDelegate.swift */; };
+		980FCB7B257F6D4C00C5798E /* FCBPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB76257F63ED00C5798E /* FCBPeripheralManager.swift */; };
+		980FCB7C257F6D4F00C5798E /* FCBPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 980FCB76257F63ED00C5798E /* FCBPeripheralManager.swift */; };
 		9CBFD72BAA468BCAA0F9D0C6115B175D /* Pods-fuikit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5346657218E665D7AA98C1EF0407AF9 /* Pods-fuikit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
 		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
@@ -129,10 +129,10 @@
 		948B81273210CDB527B8A2A72FA06F18 /* FUITableViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FUITableViewViewController.swift; path = fuikit/Classes/FUITableViewViewController.swift; sourceTree = "<group>"; };
 		94FC401755D75E784216596117624F70 /* Pods_fuikit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fuikit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		980FCB6B257F1CD300C5798E /* FUICLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FUICLLocationManagerDelegate.swift; path = fuikit/Classes/FUICLLocationmanagerDelegate/FUICLLocationManagerDelegate.swift; sourceTree = "<group>"; };
-		980FCB72257F5E6300C5798E /* FUICBCentralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FUICBCentralManagerDelegate.swift; path = fuikit/Classes/FUICBCentralManagerDelegate.swift; sourceTree = "<group>"; };
-		980FCB74257F614200C5798E /* FUICBPeripheralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FUICBPeripheralManagerDelegate.swift; path = fuikit/Classes/FUICBPeripheralManagerDelegate.swift; sourceTree = "<group>"; };
-		980FCB76257F63ED00C5798E /* FUICBPeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FUICBPeripheralManager.swift; path = fuikit/Classes/FUICBPeripheralManager.swift; sourceTree = "<group>"; };
+		980FCB6B257F1CD300C5798E /* FCLLocationManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FCLLocationManagerDelegate.swift; path = fuikit/Classes/FCL/FCLLocationManagerDelegate.swift; sourceTree = "<group>"; };
+		980FCB72257F5E6300C5798E /* FCBCentralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FCBCentralManagerDelegate.swift; path = fuikit/Classes/FCB/FCBCentralManagerDelegate.swift; sourceTree = "<group>"; };
+		980FCB74257F614200C5798E /* FCBPeripheralManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FCBPeripheralManagerDelegate.swift; path = fuikit/Classes/FCB/FCBPeripheralManagerDelegate.swift; sourceTree = "<group>"; };
+		980FCB76257F63ED00C5798E /* FCBPeripheralManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FCBPeripheralManager.swift; path = fuikit/Classes/FCB/FCBPeripheralManager.swift; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A39136DA077E2CAF21FEA70486088A2F /* Pods-fuikit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fuikit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -289,7 +289,7 @@
 		980FCB70257F5CF700C5798E /* CoreLocation */ = {
 			isa = PBXGroup;
 			children = (
-				980FCB6B257F1CD300C5798E /* FUICLLocationManagerDelegate.swift */,
+				980FCB6B257F1CD300C5798E /* FCLLocationManagerDelegate.swift */,
 			);
 			name = CoreLocation;
 			sourceTree = "<group>";
@@ -297,9 +297,9 @@
 		980FCB71257F5E0900C5798E /* CoreBlueTooth */ = {
 			isa = PBXGroup;
 			children = (
-				980FCB72257F5E6300C5798E /* FUICBCentralManagerDelegate.swift */,
-				980FCB74257F614200C5798E /* FUICBPeripheralManagerDelegate.swift */,
-				980FCB76257F63ED00C5798E /* FUICBPeripheralManager.swift */,
+				980FCB72257F5E6300C5798E /* FCBCentralManagerDelegate.swift */,
+				980FCB74257F614200C5798E /* FCBPeripheralManagerDelegate.swift */,
+				980FCB76257F63ED00C5798E /* FCBPeripheralManager.swift */,
 			);
 			name = CoreBlueTooth;
 			sourceTree = "<group>";
@@ -626,12 +626,12 @@
 				D96BA73D31739F1F2C9DC7BB15DA67C3 /* FUICollectionViewViewController.swift in Sources */,
 				59C1E6F431304190CAF0A64E85012E9A /* fuikit-dummy.m in Sources */,
 				B39D68A3AEA695CB92038FA7EAD92B2B /* FUISearchBarDelegate.swift in Sources */,
-				980FCB7B257F6D4C00C5798E /* FUICBPeripheralManager.swift in Sources */,
-				980FCB6D257F1CD300C5798E /* FUICLLocationManagerDelegate.swift in Sources */,
+				980FCB7B257F6D4C00C5798E /* FCBPeripheralManager.swift in Sources */,
+				980FCB6D257F1CD300C5798E /* FCLLocationManagerDelegate.swift in Sources */,
 				71911B41490AF53137AC123174E2769A /* FUITableViewDataSource.swift in Sources */,
 				46F92925A7BE4A7B41991FD97CCA75A7 /* FUITableViewDelegate.swift in Sources */,
 				BDF22ED74184565B9997642173788806 /* FUITableViewViewController.swift in Sources */,
-				980FCB78257F6D4300C5798E /* FUICBCentralManagerDelegate.swift in Sources */,
+				980FCB78257F6D4300C5798E /* FCBCentralManagerDelegate.swift in Sources */,
 				8D8732004ED1555C9EB041829179D40B /* FUITextFieldDelegate.swift in Sources */,
 				E2049A2B1DB5C225458E4B1E3DDA7B45 /* FUITextViewDelegate.swift in Sources */,
 				CB86CB90CC8DE15C695364BA5855FFBD /* FUIViewController.swift in Sources */,
@@ -642,9 +642,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980FCB7A257F6D4400C5798E /* FUICBCentralManagerDelegate.swift in Sources */,
+				980FCB7A257F6D4400C5798E /* FCBCentralManagerDelegate.swift in Sources */,
 				65EF76C25A417D8406E8A078D155834C /* Pods-fuikit_Tests-dummy.m in Sources */,
-				980FCB6F257F1CD300C5798E /* FUICLLocationManagerDelegate.swift in Sources */,
+				980FCB6F257F1CD300C5798E /* FCLLocationManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,14 +654,14 @@
 			files = (
 				6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */,
 				8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */,
-				980FCB7C257F6D4F00C5798E /* FUICBPeripheralManager.swift in Sources */,
-				980FCB75257F614200C5798E /* FUICBPeripheralManagerDelegate.swift in Sources */,
+				980FCB7C257F6D4F00C5798E /* FCBPeripheralManager.swift in Sources */,
+				980FCB75257F614200C5798E /* FCBPeripheralManagerDelegate.swift in Sources */,
 				E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */,
-				980FCB6C257F1CD300C5798E /* FUICLLocationManagerDelegate.swift in Sources */,
+				980FCB6C257F1CD300C5798E /* FCLLocationManagerDelegate.swift in Sources */,
 				88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */,
 				9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */,
 				11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */,
-				980FCB73257F5E6300C5798E /* FUICBCentralManagerDelegate.swift in Sources */,
+				980FCB73257F5E6300C5798E /* FCBCentralManagerDelegate.swift in Sources */,
 				2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */,
 				14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */,
 				A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */,
@@ -672,9 +672,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				980FCB79257F6D4400C5798E /* FUICBCentralManagerDelegate.swift in Sources */,
+				980FCB79257F6D4400C5798E /* FCBCentralManagerDelegate.swift in Sources */,
 				DE430F6011E241116C3CA39A2F1B1672 /* Pods-fuikit_Example-dummy.m in Sources */,
-				980FCB6E257F1CD300C5798E /* FUICLLocationManagerDelegate.swift in Sources */,
+				980FCB6E257F1CD300C5798E /* FCLLocationManagerDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  FUICLLocationManagerDelegate.swift
+//  FCLLocationManagerDelegate.swift
 //  Pods
 //
 //  Created by Calvin Collins on 12/7/20.
@@ -8,7 +8,7 @@
 import UIKit
 import CoreLocation
 
-public class FUICLLocationManagerDelegate: NSObject, CLLocationManagerDelegate {
+public class FCLLocationManagerDelegate: NSObject, CLLocationManagerDelegate {
   
   /**
    This class implements CLLocationManagerDelegate, with some important exceptions. Some iOS 13 methods were not able to be implemented in this functional framework because of parameters that are only available in iOS 13. These methods are:

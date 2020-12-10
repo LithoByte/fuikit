@@ -1,14 +1,14 @@
 //
-//  FUICBPeripheralManagerDelegate.swift
-//  FBSnapshotTestCase
+//  FCBPeripheralManagerDelegate.swift
+//  fuikit
 //
-//  Created by William Collins on 12/7/20.
+//  Created by Calvin Collins on 12/7/20.
 //
 
 import Foundation
 import CoreBluetooth
 
-open class FUICBPeripheralManagerDelegate: NSObject, CBPeripheralManagerDelegate {
+open class FCBPeripheralManagerDelegate: NSObject, CBPeripheralManagerDelegate {
   
   /**
    This class implements CBPeripheralManagerDelegate, with some important exceptions. Some iOS 13 methods were not able to be implemented in this functional framework because of parameters that are only available in iOS 13. These methods are:

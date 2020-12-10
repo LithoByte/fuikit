@@ -1,14 +1,14 @@
 //
-//  FUICBPeripheralManager.swift
-//  FBSnapshotTestCase
+//  FCBPeripheralManager.swift
+//  fuikit
 //
-//  Created by William Collins on 12/7/20.
+//  Created by Calvin Collins on 12/7/20
 //
 
 import Foundation
 import CoreBluetooth
 
-open class FUICBPeripheralManager: CBPeripheralManager {
+open class FCBPeripheralManager: CBPeripheralManager {
   
   /**
    This class implements CBPeripheralManager. All functions call their corresponding super methods in CBPeripheralManager

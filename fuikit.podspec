@@ -36,11 +36,11 @@ For instance, instead of subclassing UIViewController, you could use FUIViewCont
   s.source_files = 'fuikit/Classes/**/*.swift'
   
   s.subspec 'CoreLocation' do |cll|
-    cll.source_files = 'fuikit/Classes/CoreLocation/**/*.swift'
+    cll.source_files = 'fuikit/Classes/FCL/*.swift'
   end
   
   s.subspec 'CoreBluetooth' do |cb|
-    cb.source_files = 'fuikit/Classes/CoreBlueThooth/**/*.swift'
+    cb.source_files = 'fuikit/Classes/FCB/*.swift'
   end
   s.resources = 'fuikit/**/*.xib'
   
