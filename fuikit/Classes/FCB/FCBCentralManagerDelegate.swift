@@ -15,12 +15,12 @@ open class FCentralManagerDelegate: NSObject, CBCentralManagerDelegate {
    */
   public var onCentralManagerDidUpdateState: ((CBCentralManager) -> Void)? = nil
   public var onWillRestoreState: ((CBCentralManager, [String:Any]) -> Void)? = nil
-  public var onDidDiscoverPeripheralAdandRSSI: ((CBCentralManager, CBPeripheral, [String:Any], NSNumber) -> Void)? = nil
+  public var onDidDiscoverPeripheralAdAndRSSI: ((CBCentralManager, CBPeripheral, [String:Any], NSNumber) -> Void)? = nil
   public var onDidConnect: ((CBCentralManager, CBPeripheral) -> Void)? = nil
   public var onDidFailToConnect: ((CBCentralManager, CBPeripheral, Error?) -> Void)? = nil
   public var onDidDisconnect: ((CBCentralManager, CBPeripheral, Error?) -> Void)? = nil
-  public var onConnectionEventForPeripheral: ((CBCentralManager, CBConnectionEvent, CBPeripheral) -> Void)?
-  public var onDidUpdateAndAuthorize: ((CBCentralManager, CBPeripheral) -> Void)?
+  public var onConnectionEventForPeripheral: ((CBCentralManager, CBConnectionEvent, CBPeripheral) -> Void)? = nil
+  public var onDidUpdateAndAuthorize: ((CBCentralManager, CBPeripheral) -> Void)? = nil
   
   
   @available(iOS 5.0, *)
@@ -35,7 +35,7 @@ open class FCentralManagerDelegate: NSObject, CBCentralManagerDelegate {
   
   @available(iOS 5.0, *)
   open func centralManager(_ central: CBCentralManager, didDiscover peripheral: CBPeripheral, advertisementData: [String : Any], rssi RSSI: NSNumber) {
-    onDidDiscoverPeripheralAdandRSSI?(central, peripheral, advertisementData, RSSI)
+    onDidDiscoverPeripheralAdAndRSSI?(central, peripheral, advertisementData, RSSI)
   }
   
   @available(iOS 5.0, *)

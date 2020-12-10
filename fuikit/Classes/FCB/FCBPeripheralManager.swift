@@ -12,7 +12,7 @@ open class FCBPeripheralManager: CBPeripheralManager {
   
   /**
    This class implements CBPeripheralManager. All functions call their corresponding super methods in CBPeripheralManager
-   If this is not desired behavior, you should subclass this class and override the methods, and making sure your self-defined, functional methods are sufficient to ensure the manager works.
+   If this is not desired behavior, you should subclass this class and override the methods, and making sure your self-defined, functional methods are sufficient and make sure the manager works.
    
    */
   

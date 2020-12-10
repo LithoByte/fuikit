@@ -11,7 +11,7 @@ import CoreBluetooth
 open class FCBPeripheralManagerDelegate: NSObject, CBPeripheralManagerDelegate {
   
   /**
-   This class implements CBPeripheralManagerDelegate, with some important exceptions. Some iOS 13 methods were not able to be implemented in this functional framework because of parameters that are only available in iOS 13. These methods are:
+   This class implements CBPeripheralManagerDelegate, with some important exceptions. One iOS 13 method was not able to be implemented in this functional framework because of parameters that are only available in iOS 13. This methods is:
    
    1. peripheralManager(CBPeripheralManager, didOpen: CBL2CAPChannel?, error: Error?)
    
