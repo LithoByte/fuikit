@@ -28,12 +28,20 @@ For instance, instead of subclassing UIViewController, you could use FUIViewCont
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Elliot' => '' }
-  s.source           = { :git => 'https://github.com/ThryvInc/fuikit.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/ThryvInc/fuikit.git', :tag => s.version.to_s, :submodules => true}
   s.social_media_url = 'https://twitter.com/elliot_schrock'
 
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'fuikit/Classes/**/*.swift'
+  
+  s.subspec 'CoreLocation' do |cll|
+    cll.source_files = 'fuikit/Classes/FCL/*.swift'
+  end
+  
+  s.subspec 'CoreBluetooth' do |cb|
+    cb.source_files = 'fuikit/Classes/FCB/*.swift'
+  end
   s.resources = 'fuikit/**/*.xib'
   
   # s.resource_bundles = {
