@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public class FUIImagePickerDelegate: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+open class FUIImagePickerDelegate: NSObject, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     
     open var onPickerDidCancel: ((UIImagePickerController) -> Void)?
     open var onPickerDidPick: ((UIImagePickerController, [UIImagePickerController.InfoKey : Any]) -> Void)?
