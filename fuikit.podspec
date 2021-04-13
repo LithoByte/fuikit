@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'fuikit'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = 'fuikit makes standard iOS classes easy to use with FP patterns.'
   s.swift_versions   = ['4.0', '4.1', '4.2', '5.0', '5.1', '5.2']
 
@@ -34,6 +34,10 @@ For instance, instead of subclassing UIViewController, you could use FUIViewCont
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'fuikit/Classes/**/*.swift'
+  
+  s.subspec 'Core' do |core|
+      core.source_files = 'fuikit/Classes/Core/**/*.swift'
+  end
   
   s.subspec 'CoreLocation' do |cll|
     cll.source_files = 'fuikit/Classes/FCL/*.swift'
