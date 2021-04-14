@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'fuikit'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = 'fuikit makes standard iOS classes easy to use with FP patterns.'
   s.swift_versions   = ['4.0', '4.1', '4.2', '5.0', '5.1', '5.2']
 
@@ -25,7 +25,6 @@ For instance, instead of subclassing UIViewController, you could use FUIViewCont
                        DESC
 
   s.homepage         = 'https://github.com/ThryvInc/fuikit'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Elliot' => '' }
   s.source           = { :git => 'https://github.com/ThryvInc/fuikit.git', :tag => s.version.to_s, :submodules => true}
@@ -34,9 +33,11 @@ For instance, instead of subclassing UIViewController, you could use FUIViewCont
   s.ios.deployment_target = '11.0'
 
   s.source_files = 'fuikit/Classes/**/*.swift'
+  s.resources = 'fuikit/**/*.xib'
   
   s.subspec 'Core' do |core|
-      core.source_files = 'fuikit/Classes/Core/**/*.swift'
+    core.source_files = 'fuikit/Classes/Core/*.swift'
+    core.resources = 'fuikit/Classes/Core/*.xib'
   end
   
   s.subspec 'CoreLocation' do |cll|
@@ -46,13 +47,4 @@ For instance, instead of subclassing UIViewController, you could use FUIViewCont
   s.subspec 'CoreBluetooth' do |cb|
     cb.source_files = 'fuikit/Classes/FCB/*.swift'
   end
-  s.resources = 'fuikit/**/*.xib'
-  
-  # s.resource_bundles = {
-  #   'fuikit' => ['fuikit/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
