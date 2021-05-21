@@ -20,6 +20,7 @@
 		4E4AB631E58FADDB6015F5ACFAE9FC36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
 		54C40958DE8DC3DA0BCB0211C52F4BFB /* FCBPeripheralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81A13D70969E5264E0D786EE79663D0C /* FCBPeripheralManagerDelegate.swift */; };
 		5726A0B08C9877C1710A9C5EB0FDC6BA /* Pods-fuikit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 482C734233F7BE78A0F365E7E6C1263B /* Pods-fuikit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6445A68726531A3100A68669 /* UIViewController+PushPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6445A68626531A3100A68669 /* UIViewController+PushPop.swift */; };
 		64AF0F679BD32A92555A462B5D6AC34C /* FCBPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F514D94BD14FED2C6B648C6913836CCD /* FCBPeripheralManager.swift */; };
 		65EF76C25A417D8406E8A078D155834C /* Pods-fuikit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E93F17BD1C7C4B3805F662C9394FDB2 /* Pods-fuikit_Tests-dummy.m */; };
 		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
@@ -82,9 +83,9 @@
 		01944A417A011FF2B457BE2678AD3817 /* FCBCentralManagerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FCBCentralManagerDelegate.swift; sourceTree = "<group>"; };
 		03206E921D5A0ED2FD984C0E2F5FA571 /* fuikit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "fuikit-Info.plist"; sourceTree = "<group>"; };
 		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = fuikit.framework; path = fuikit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fuikit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		1CF21B801A4824AF295DDD1513F35CE4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		1CF21B801A4824AF295DDD1513F35CE4 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		212E2C31324EC69132735B77E7296CCB /* Pods-fuikit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fuikit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
@@ -106,8 +107,9 @@
 		4F7A5E1A3D443C9BF40D247B59621F92 /* fuikit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fuikit-umbrella.h"; sourceTree = "<group>"; };
 		527B39D693427D722657AEC5E4ED6A4A /* Pods-fuikit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fuikit_Example-dummy.m"; sourceTree = "<group>"; };
 		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F39F949EC04A60125889DB260150AC /* FUICollectionViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FUICollectionViewViewController.xib; path = fuikit/Classes/Core/FUICollectionViewViewController.xib; sourceTree = "<group>"; };
+		6445A68626531A3100A68669 /* UIViewController+PushPop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+PushPop.swift"; sourceTree = "<group>"; };
 		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
 		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		6E94AAA09CCC908716A3AA8FAD621331 /* fuikit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fuikit.release.xcconfig; sourceTree = "<group>"; };
@@ -120,15 +122,15 @@
 		8734449B615C93284C2D25A6D54EB376 /* fuikit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = fuikit.modulemap; sourceTree = "<group>"; };
 		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		8F621C260ED88944AA44E2C0284602A0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		8F621C260ED88944AA44E2C0284602A0 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
-		94FC401755D75E784216596117624F70 /* Pods_fuikit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_fuikit_Example.framework; path = "Pods-fuikit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		94FC401755D75E784216596117624F70 /* Pods_fuikit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fuikit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A39136DA077E2CAF21FEA70486088A2F /* Pods-fuikit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fuikit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		AB49AA9EB707A81608A2F9D75BB75CA5 /* Pods-fuikit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fuikit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		ABAF7B191E1FF8709C434AAF4508ACD2 /* Pods_fuikit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_fuikit_Tests.framework; path = "Pods-fuikit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABAF7B191E1FF8709C434AAF4508ACD2 /* Pods_fuikit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fuikit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		B620848EA0F4BD801F45F5D63407356A /* Pods-fuikit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fuikit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B686D0B3C42AB0507300F8A97E3AFE43 /* Pods-fuikit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fuikit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -148,7 +150,7 @@
 		DECE372A3D9B479DF59C3927CC3375A3 /* Pods-fuikit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fuikit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		E5346657218E665D7AA98C1EF0407AF9 /* Pods-fuikit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fuikit_Example-umbrella.h"; sourceTree = "<group>"; };
 		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		EC00F9EFF80492802A146F0932493BD8 /* fuikit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = fuikit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		EC00F9EFF80492802A146F0932493BD8 /* fuikit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = fuikit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		EF8FC49D0A76F4FF0AB85B4B6A72C952 /* FUICollectionViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FUICollectionViewViewController.swift; sourceTree = "<group>"; };
 		F225DF1D0A8FDE58EE8E067753CD4C79 /* Pods-fuikit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fuikit_Example-Info.plist"; sourceTree = "<group>"; };
 		F514D94BD14FED2C6B648C6913836CCD /* FCBPeripheralManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FCBPeripheralManager.swift; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 				3872E2BD00265912482265444F6B34F4 /* FUITextFieldDelegate.swift */,
 				3280DEFE78A3CFAA55C9F2DEDC2E77B3 /* FUITextViewDelegate.swift */,
 				CFEE8BAB1AEEB4C4C91CF892D8E54F3F /* FUIViewController.swift */,
+				6445A68626531A3100A68669 /* UIViewController+PushPop.swift */,
 			);
 			name = Core;
 			path = fuikit/Classes/Core;
@@ -363,7 +366,6 @@
 				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
 				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
 			);
-			name = FBSnapshotTestCase;
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
@@ -634,6 +636,7 @@
 				ABF683166994101305A2BF9FD7DC9AC6 /* FCBCentralManagerDelegate.swift in Sources */,
 				64AF0F679BD32A92555A462B5D6AC34C /* FCBPeripheralManager.swift in Sources */,
 				54C40958DE8DC3DA0BCB0211C52F4BFB /* FCBPeripheralManagerDelegate.swift in Sources */,
+				6445A68726531A3100A68669 /* UIViewController+PushPop.swift in Sources */,
 				8D87A2C97192F4739C3931BBF876034E /* FCLLocationManagerDelegate.swift in Sources */,
 				ABE68BA6293FC6E950F3BE482D754C0A /* FUICollectionViewViewController.swift in Sources */,
 				A69226988D150E4B3088DBAE02E3A087 /* FUIImagePickerDelegate.swift in Sources */,
@@ -960,8 +963,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
