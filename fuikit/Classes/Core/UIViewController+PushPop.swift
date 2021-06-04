@@ -156,3 +156,10 @@ public func tabPopAnimated<T>(_ vc: T) where T: UIViewController {
 public func tabPresentAnimated<T>(_ presenter: T, _ vc: UIViewController) where T: UIViewController {
     presenter.tabBarController?.present(vc, animated: true, completion: nil)
 }
+
+public func popAndReplace(vc: UIViewController, with pushee: UIViewController) {
+    if let nav = vc.navigationController {
+        nav.popToRootViewController(animated: true)
+        nav.pushViewController(pushee, animated: true)
+    }
+}
