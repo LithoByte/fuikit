@@ -1,6 +1,6 @@
 {
   "name": "fuikit",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "summary": "fuikit makes standard iOS classes easy to use with FP patterns.",
   "swift_versions": [
     "4.0",
@@ -21,7 +21,7 @@
   },
   "source": {
     "git": "https://github.com/ThryvInc/fuikit.git",
-    "tag": "0.1.3",
+    "tag": "0.1.5",
     "submodules": true
   },
   "social_media_url": "https://twitter.com/elliot_schrock",
@@ -33,7 +33,8 @@
   "subspecs": [
     {
       "name": "Core",
-      "source_files": "fuikit/Classes/Core/**/*.swift"
+      "source_files": "fuikit/Classes/Core/**/*.swift",
+      "resources": "fuikit/Classes/Core/**/*.xib"
     },
     {
       "name": "CoreLocation",
