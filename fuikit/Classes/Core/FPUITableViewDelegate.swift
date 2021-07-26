@@ -13,7 +13,7 @@ import UIKit
  since these functions take precedence over static values you can provide the table view and there's no way to provide an ignored value if you
  implement them, as well as the functions for providing a header or footer view, for the same reasons.
  */
-@objc open class FUITableViewDelegate: NSObject, UITableViewDelegate {
+@objc open class FPUITableViewDelegate: NSObject, UITableViewDelegate {
     public var onSelect: (UITableView, IndexPath) -> Void = { _,_ in }
     public var onWillDisplay: (UITableViewCell, UITableView, IndexPath) -> Void = { _,_,_ in }
     

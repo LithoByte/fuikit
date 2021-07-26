@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class FUIViewController: UIViewController {
+open class FPUIViewController: UIViewController {
     public var onLoadView: ((FUIViewController) -> Void)?
     public var onViewDidLoad: ((FUIViewController) -> Void)?
     public var onViewWillAppear: ((FUIViewController, Bool) -> Void)?

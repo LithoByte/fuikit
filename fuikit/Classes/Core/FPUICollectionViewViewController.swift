@@ -7,7 +7,7 @@
 
 import UIKit
 
-open class FUICollectionViewViewController: UIViewController {
+open class FPUICollectionViewViewController: UIViewController {
     @IBOutlet public weak var collectionView: UICollectionView!
     
     public var onLoadView: ((FUICollectionViewViewController) -> Void)?
