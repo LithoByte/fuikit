@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import LithoOperators
+import Prelude
 
 public func addSubview(_ adder: UIView, subview: UIView) {
     adder.addSubview(subview)
@@ -15,9 +17,7 @@ public func addSublayer(_ adder: CALayer, sublayer: CALayer) {
     adder.addSublayer(sublayer)
 }
 
-public func setMask(layer: CALayer, mask: CALayer) {
-    layer.mask = mask
-}
+public let setMask: (CALayer, CALayer) -> Void = setter(\CALayer.mask)
 
 public func addGestureRecognizer(_ gesture: UIGestureRecognizer) -> (UIView) -> Void {
     return { view in
@@ -39,6 +39,12 @@ public func convert(vc: UIViewController, to view: UIView) -> CGRect {
     return vc.view.convert(vc.view.bounds, to: view)
 }
 
+/**
+ Returns a gradient layer with no frame
+ - Parameter colors: The colors, from startPoint to endPoint *see below*
+ - Parameter startPoint: A normalized point `(x:[0, 1], y: [0, 1])` marking  where `colors[0]` is drawn
+ - Parameter endpoint: A normalized point `(x: [0, 1], y: [0, 1])` marking where `colors.last?` is drawn
+ */
 public func gradientLayer(colors: [UIColor], startPoint: CGPoint, endPoint: CGPoint) -> CAGradientLayer {
     let layer = CAGradientLayer()
     layer.colors = colors.map(\.cgColor)
@@ -51,51 +57,72 @@ public func withPadding(_ rect: CGRect, padding: CGFloat) -> CGRect {
     return rect.insetBy(dx: -padding, dy: -padding)
 }
 
+public let paddingSetter = curry(flip(withPadding))
+
 public func shiftRight(rect: CGRect, by shift: CGFloat) -> CGRect {
     return CGRect(x: rect.minX + shift, y: rect.minY, width: rect.width, height: rect.height)
 }
+public let rightShifter = curry(flip(shiftRight))
 
 public func shiftLeft(rect: CGRect, by shift: CGFloat) -> CGRect {
     return CGRect(x: rect.minX - shift, y: rect.minY, width: rect.width, height: rect.height)
 }
+public let leftShifter = curry(flip(shiftLeft))
 
 public func shiftUp(rect: CGRect, by shift: CGFloat) -> CGRect {
     return CGRect(x: rect.minX, y: rect.minY - shift, width: rect.width, height: rect.height)
 }
+public let upShifter = curry(flip(shiftUp))
 
 public func shiftDown(rect: CGRect, by shift: CGFloat) -> CGRect {
     return CGRect(x: rect.minX, y: rect.minY + shift, width: rect.width, height: rect.height)
 }
+public let downShifter = curry(flip(shiftDown))
 
 public func shiftViewRight(by shift: CGFloat) -> (UIView) -> Void {
     return { view in
-        view.frame = CGRect(x: view.frame.minX + shift, y: view.frame.minY, width: view.frame.width, height: view.frame.height)
+        view.frame = shiftRight(rect: view.frame, by: shift)
     }
 }
 
 public func shiftViewLeft(by shift: CGFloat) -> (UIView) -> Void {
     return { view in
-        view.frame = CGRect(x: view.frame.minX - shift, y: view.frame.minY, width: view.frame.width, height: view.frame.height)
+        view.frame = shiftLeft(rect: view.frame, by: shift)
     }
 }
 
 public func shiftViewUp(by shift: CGFloat) -> (UIView) -> Void {
     return { view in
-        view.frame = CGRect(x: view.frame.minX, y: view.frame.minY - shift, width: view.frame.width, height: view.frame.height)
+        view.frame = shiftUp(rect: view.frame, by: shift)
     }
 }
 
 public func shiftViewDown(by shift: CGFloat) -> (UIView) -> Void {
     return { view in
-        view.frame = CGRect(x: view.frame.minX, y: view.frame.minY + shift, width: view.frame.width, height: view.frame.height)
+        view.frame = shiftDown(rect: view.frame, by: shift)
     }
 }
 
-public func combineTwoRects(leftRect: CGRect, rightRect: CGRect) -> CGRect {
-    return CGRect(x: leftRect.minX, y: min(leftRect.minY, rightRect.minY), width: rightRect.maxX - leftRect.minX, height: max(leftRect.maxY, rightRect.maxY) - min(leftRect.minY, rightRect.minY))
+/**
+ Combines two rectangles into a box that contains both
+ - Pre: Must be in the same coordinate space
+ */
+
+public func combineTwoRects(rect1: CGRect, rect2: CGRect) -> CGRect {
+    let x = rect1.minX < rect2.minX ? rect1.minX : rect2.minX
+    let y = rect1.minY < rect2.minY ? rect1.minY : rect2.minY
+    let width = rect1.width > rect2.width ? rect1.width : rect2.width
+    let height = rect1.height > rect2.height ? rect1.height : rect2.height
+    return CGRect(x: x, y: y, width: width, height: height)
 }
 
+/**
+ Combines an array of rectangles into a rectangle containing all elements
+ - Parameter rects: [CGRect]
+ */
 public func combineRects(rects: CGRect...) -> CGRect {
-    let sortedRects = rects.sorted(by: { $0.minX < $1.minX })
-    return sortedRects.reduce(sortedRects[0], combineTwoRects)
+    if rects.count == 0 {
+        return .zero
+    }
+    return rects.reduce(rects[0], combineTwoRects)
 }
