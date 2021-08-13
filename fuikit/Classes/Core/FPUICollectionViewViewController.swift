@@ -1,5 +1,5 @@
 //
-//  FUICollectionViewViewController.swift
+//  FPUICollectionViewViewController.swift
 //  fuikit
 //
 //  Created by Elliot Schrock on 10/21/20.
@@ -10,20 +10,20 @@ import UIKit
 open class FPUICollectionViewViewController: UIViewController {
     @IBOutlet public weak var collectionView: UICollectionView!
     
-    public var onLoadView: ((FUICollectionViewViewController) -> Void)?
-    public var onViewDidLoad: ((FUICollectionViewViewController) -> Void)?
-    public var onViewWillAppear: ((FUICollectionViewViewController, Bool) -> Void)?
-    public var onViewDidAppear: ((FUICollectionViewViewController, Bool) -> Void)?
-    public var onViewWillDisappear: ((FUICollectionViewViewController, Bool) -> Void)?
-    public var onViewDidDisappear: ((FUICollectionViewViewController, Bool) -> Void)?
+    public var onLoadView: ((FPUICollectionViewViewController) -> Void)?
+    public var onViewDidLoad: ((FPUICollectionViewViewController) -> Void)?
+    public var onViewWillAppear: ((FPUICollectionViewViewController, Bool) -> Void)?
+    public var onViewDidAppear: ((FPUICollectionViewViewController, Bool) -> Void)?
+    public var onViewWillDisappear: ((FPUICollectionViewViewController, Bool) -> Void)?
+    public var onViewDidDisappear: ((FPUICollectionViewViewController, Bool) -> Void)?
     
-    public var onShouldPerformSegue: ((FUICollectionViewViewController, String, Any?) -> Bool )?
-    public var onPrepare: ((FUICollectionViewViewController, UIStoryboardSegue, Any?) -> Void)?
-    public var onViewWillLayoutSubviews: ((FUICollectionViewViewController) -> Void)?
-    public var onViewDidLayoutSubviews: ((FUICollectionViewViewController) -> Void)?
-    public var onUpdateViewConstraints: ((FUICollectionViewViewController) -> Void)?
-    public var onViewLayoutMarginsDidChange: ((FUICollectionViewViewController) -> Void)?
-    public var onViewSafeAreaInsetsDidChange: ((FUICollectionViewViewController) -> Void)?
+    public var onShouldPerformSegue: ((FPUICollectionViewViewController, String, Any?) -> Bool )?
+    public var onPrepare: ((FPUICollectionViewViewController, UIStoryboardSegue, Any?) -> Void)?
+    public var onViewWillLayoutSubviews: ((FPUICollectionViewViewController) -> Void)?
+    public var onViewDidLayoutSubviews: ((FPUICollectionViewViewController) -> Void)?
+    public var onUpdateViewConstraints: ((FPUICollectionViewViewController) -> Void)?
+    public var onViewLayoutMarginsDidChange: ((FPUICollectionViewViewController) -> Void)?
+    public var onViewSafeAreaInsetsDidChange: ((FPUICollectionViewViewController) -> Void)?
     
     open override func loadView() {
         onLoadView?(self)
