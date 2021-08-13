@@ -34,6 +34,7 @@ For instance, instead of subclassing UIViewController, you could use FUIViewCont
 
   s.source_files = 'fuikit/Classes/**/*.swift'
   s.resources = 'fuikit/**/*.xib'
+  s.dependency 'LithoOperators'
   
   s.subspec 'Core' do |core|
     core.source_files = 'fuikit/Classes/Core/**/*.swift'

@@ -8,26 +8,44 @@ PODS:
     - fuikit/Core (= 0.1.5)
     - fuikit/CoreBluetooth (= 0.1.5)
     - fuikit/CoreLocation (= 0.1.5)
-  - fuikit/Core (0.1.5)
-  - fuikit/CoreBluetooth (0.1.5)
-  - fuikit/CoreLocation (0.1.5)
+    - LithoOperators
+  - fuikit/Core (0.1.5):
+    - LithoOperators
+  - fuikit/CoreBluetooth (0.1.5):
+    - LithoOperators
+  - fuikit/CoreLocation (0.1.5):
+    - LithoOperators
+  - LithoOperators (0.1.4):
+    - Prelude
+  - Prelude (3.0.0)
 
 DEPENDENCIES:
   - FBSnapshotTestCase (~> 2.1.4)
   - fuikit (from `../`)
+  - LithoOperators (from `https://github.com/LithoByte/LithoOperators`)
 
 SPEC REPOS:
   trunk:
     - FBSnapshotTestCase
+    - Prelude
 
 EXTERNAL SOURCES:
   fuikit:
     :path: "../"
+  LithoOperators:
+    :git: https://github.com/LithoByte/LithoOperators
+
+CHECKOUT OPTIONS:
+  LithoOperators:
+    :commit: 180a93436cc4d22e7e4a83ea1509ee67a08d761b
+    :git: https://github.com/LithoByte/LithoOperators
 
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
-  fuikit: 976080e1c04037e01d14541135a104cb208d8c0d
+  fuikit: 13532ee7ca21ac9a1fd4119fea6c1b3fec55a28e
+  LithoOperators: 8fc0c6a49e34a8d1ca01b777844f58e36c062d9f
+  Prelude: fe4cc0fd961d34edf48fe6b04d05c863449efb0a
 
-PODFILE CHECKSUM: cc297152d943cf28969063374be8c153718b6a9b
+PODFILE CHECKSUM: 0c1fe38aa78de21a8e2448fa0fbd5376bfff8c74
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.10.0
