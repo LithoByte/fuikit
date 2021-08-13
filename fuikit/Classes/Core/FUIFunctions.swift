@@ -57,27 +57,27 @@ public func withPadding(_ rect: CGRect, padding: CGFloat) -> CGRect {
     return rect.insetBy(dx: -padding, dy: -padding)
 }
 
-public let paddingSetter = curry(flip(withPadding))
+public let withPadding = curry(flip(withPadding(_:padding:)))
 
 public func shiftRight(rect: CGRect, by shift: CGFloat) -> CGRect {
     return CGRect(x: rect.minX + shift, y: rect.minY, width: rect.width, height: rect.height)
 }
-public let rightShifter = curry(flip(shiftRight))
+public let shiftedRightBy = curry(flip(shiftRight))
 
 public func shiftLeft(rect: CGRect, by shift: CGFloat) -> CGRect {
     return CGRect(x: rect.minX - shift, y: rect.minY, width: rect.width, height: rect.height)
 }
-public let leftShifter = curry(flip(shiftLeft))
+public let shiftedLeftBy = curry(flip(shiftLeft))
 
 public func shiftUp(rect: CGRect, by shift: CGFloat) -> CGRect {
     return CGRect(x: rect.minX, y: rect.minY - shift, width: rect.width, height: rect.height)
 }
-public let upShifter = curry(flip(shiftUp))
+public let shiftedUpBy = curry(flip(shiftUp))
 
 public func shiftDown(rect: CGRect, by shift: CGFloat) -> CGRect {
     return CGRect(x: rect.minX, y: rect.minY + shift, width: rect.width, height: rect.height)
 }
-public let downShifter = curry(flip(shiftDown))
+public let shiftedDownBy = curry(flip(shiftDown))
 
 public func shiftViewRight(by shift: CGFloat) -> (UIView) -> Void {
     return { view in
@@ -121,8 +121,5 @@ public func combineTwoRects(rect1: CGRect, rect2: CGRect) -> CGRect {
  - Parameter rects: [CGRect]
  */
 public func combineRects(rects: CGRect...) -> CGRect {
-    if rects.count == 0 {
-        return .zero
-    }
-    return rects.reduce(rects[0], combineTwoRects)
+    return rects.count == 0 ? .zero : rects.reduce(rects[0], combineTwoRects)
 }
