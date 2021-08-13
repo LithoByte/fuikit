@@ -7,7 +7,7 @@
 
 import Foundation
 
-open class FUICollectionViewDelegate: NSObject, UICollectionViewDelegate {
+open class FPUICollectionViewDelegate: NSObject, UICollectionViewDelegate {
     public var onDidHighlightItemAt: ((UICollectionView, IndexPath) -> Void)?
     public var onDidUnhighlightItemAt: ((UICollectionView, IndexPath) -> Void)?
     public var onDidSelectItemAt: ((UICollectionView, IndexPath) -> Void)?

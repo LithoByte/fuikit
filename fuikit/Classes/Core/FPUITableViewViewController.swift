@@ -6,7 +6,7 @@
 //
 import UIKit
 
-open class FUITableViewViewController: UIViewController {
+open class FPUITableViewViewController: UIViewController {
     @IBOutlet public var tableView: UITableView?
     
     public var onLoadView: ((FUITableViewViewController) -> Void)?
