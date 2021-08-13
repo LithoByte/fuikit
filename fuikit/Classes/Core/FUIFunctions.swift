@@ -123,3 +123,14 @@ public func combineTwoRects(rect1: CGRect, rect2: CGRect) -> CGRect {
 public func combineRects(rects: CGRect...) -> CGRect {
     return rects.count == 0 ? .zero : rects.reduce(rects[0], combineTwoRects)
 }
+
+public func wheelsDatePicker(for textField: UITextField?, locale: Locale? = nil) -> UIDatePicker {
+    let datePicker = UIDatePicker()
+    textField?.inputView = datePicker
+    if #available(iOS 13.4, *) {
+        datePicker.preferredDatePickerStyle = .wheels
+    }
+    datePicker.datePickerMode = .date
+    datePicker.locale = locale
+    return datePicker
+}
