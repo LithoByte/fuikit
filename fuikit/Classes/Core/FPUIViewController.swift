@@ -1,5 +1,5 @@
 //
-//  FUIViewController.swift
+//  FPUIViewController.swift
 //  fuikit
 //
 //  Created by Elliot Schrock on 10/31/19.
@@ -8,20 +8,20 @@
 import UIKit
 
 open class FPUIViewController: UIViewController {
-    public var onLoadView: ((FUIViewController) -> Void)?
-    public var onViewDidLoad: ((FUIViewController) -> Void)?
-    public var onViewWillAppear: ((FUIViewController, Bool) -> Void)?
-    public var onViewDidAppear: ((FUIViewController, Bool) -> Void)?
-    public var onViewWillDisappear: ((FUIViewController, Bool) -> Void)?
-    public var onViewDidDisappear: ((FUIViewController, Bool) -> Void)?
+    public var onLoadView: ((FPUIViewController) -> Void)?
+    public var onViewDidLoad: ((FPUIViewController) -> Void)?
+    public var onViewWillAppear: ((FPUIViewController, Bool) -> Void)?
+    public var onViewDidAppear: ((FPUIViewController, Bool) -> Void)?
+    public var onViewWillDisappear: ((FPUIViewController, Bool) -> Void)?
+    public var onViewDidDisappear: ((FPUIViewController, Bool) -> Void)?
     
-    public var onShouldPerformSegue: ((FUIViewController, String, Any?) -> Bool)?
-    public var onPrepare: ((FUIViewController, UIStoryboardSegue, Any?) -> Void)?
-    public var onViewWillLayoutSubviews: ((FUIViewController) -> Void)?
-    public var onViewDidLayoutSubviews: ((FUIViewController) -> Void)?
-    public var onUpdateViewConstraints: ((FUIViewController) -> Void)?
-    public var onViewLayoutMarginsDidChange: ((FUIViewController) -> Void)?
-    public var onViewSafeAreaInsetsDidChange: ((FUIViewController) -> Void)?
+    public var onShouldPerformSegue: ((FPUIViewController, String, Any?) -> Bool)?
+    public var onPrepare: ((FPUIViewController, UIStoryboardSegue, Any?) -> Void)?
+    public var onViewWillLayoutSubviews: ((FPUIViewController) -> Void)?
+    public var onViewDidLayoutSubviews: ((FPUIViewController) -> Void)?
+    public var onUpdateViewConstraints: ((FPUIViewController) -> Void)?
+    public var onViewLayoutMarginsDidChange: ((FPUIViewController) -> Void)?
+    public var onViewSafeAreaInsetsDidChange: ((FPUIViewController) -> Void)?
     
     open override func loadView() {
         onLoadView?(self)
