@@ -3,7 +3,7 @@ platform :ios, '11.0'
 
 target 'fuikit_Example' do
   pod 'fuikit', :path => '../'
-
+  pod 'LithoOperators', git: 'https://github.com/LithoByte/LithoOperators'
   target 'fuikit_Tests' do
     inherit! :search_paths
 

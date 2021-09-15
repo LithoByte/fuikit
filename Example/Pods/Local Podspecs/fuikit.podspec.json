@@ -30,6 +30,11 @@
   },
   "source_files": "fuikit/Classes/**/*.swift",
   "resources": "fuikit/**/*.xib",
+  "dependencies": {
+    "LithoOperators": [
+
+    ]
+  },
   "subspecs": [
     {
       "name": "Core",

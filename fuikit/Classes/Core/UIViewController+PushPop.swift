@@ -184,3 +184,10 @@ public func tabPopToRootAndReplace(_ vc: UIViewController, with pushee: UIViewCo
         nav.pushViewController(pushee, animated: true)
     }
 }
+
+public func tabPopToRootAndSwitch(_ vc: UIViewController, index: Int) {
+    if let nav = vc.tabBarController?.navigationController, let tab = nav.viewControllers.first as? UITabBarController {
+        nav.popToRootViewController(animated: true)
+        tab.selectedIndex = index
+    }
+}

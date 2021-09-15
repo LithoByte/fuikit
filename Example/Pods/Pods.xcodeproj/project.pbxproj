@@ -7,172 +7,280 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A2FD8DF7587A721E8400916E40EDAFD /* FCBPeripheralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94A39AA2FBB1083F3247FB2B6C2060A1 /* FCBPeripheralManagerDelegate.swift */; };
-		103C8A7D5003DC892DD9AE51B923D464 /* FPUIImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAD2195F7113D8383484C6E43A19C37 /* FPUIImagePickerDelegate.swift */; };
-		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */; };
-		12086C588907728CA14BB9C7F0E30474 /* FCLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3402C02B0FA4F5B231F7FEF671DA893F /* FCLLocationManagerDelegate.swift */; };
-		121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E658F388F01C72599CA75537950B6095 /* XCTest.framework */; };
-		1339FA5E7FDB4BC53A1F6F9E5A55A169 /* FPUITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D34FFBAB7CF606227710C7D7A8C849C /* FPUITableViewDelegate.swift */; };
-		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = 4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */; };
-		1F13A9FE1FE8086223DE06CFA644D632 /* FPUISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBDAF2E667A301E7C1F390606114DD8 /* FPUISearchBarDelegate.swift */; };
-		2D2C44EC6D46F7C28DA68369B472DA25 /* fuikit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FA5108B8AF729436F1FCAF5D719B743 /* fuikit-dummy.m */; };
-		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */; };
-		2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */; };
-		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		4E4AB631E58FADDB6015F5ACFAE9FC36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		5563ABD50D810062D053DE281156E429 /* FPUITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EEC56484876FB2BF92F5140D3A1889E /* FPUITextViewDelegate.swift */; };
+		00224C929D57F45B70E87359E719948D /* FBSnapshotTestCase.h in Headers */ = {isa = PBXBuildFile; fileRef = 55BE39C5F7012F359161D7701FF223DA /* FBSnapshotTestCase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0044127195DBC5ABB8E0391BD049D64C /* Pods-fuikit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5346657218E665D7AA98C1EF0407AF9 /* Pods-fuikit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11171043315A938633AAC2039C516931 /* FCBPeripheralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08A7FDB617B2A77799F7B7E3ED5A2CAF /* FCBPeripheralManagerDelegate.swift */; };
+		113A783E765076BED22DA0682C23514B /* FCLLocationManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89552B38982338FDC23A65A7FC895F0E /* FCLLocationManagerDelegate.swift */; };
+		11C410135C7E89353B480AC8DE0BFB77 /* UIApplication+StrictKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FBB8CC8308D8311C1D33A4CF72DB8E00 /* UIApplication+StrictKeyWindow.m */; };
+		121439AB6B4061E1B6222256817548FA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFF3402796086FF9F8A4150BF407795 /* XCTest.framework */; };
+		14AD81D52FAD9CF2C065C61FB00C3B4F /* UIImage+Diff.m in Sources */ = {isa = PBXBuildFile; fileRef = A2052DF3E461816D087E5E85A9FF1136 /* UIImage+Diff.m */; };
+		1745F918E343F304CDC06F402C5116B0 /* Flip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28536DB7C38A1F2E1139E9B6D173B8AD /* Flip.swift */; };
+		182180398D980D105DC1921F97C491DC /* Tuple.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D2A25ABF91DCCC5D553354F2FE541D /* Tuple.swift */; };
+		1944331B7E88394BD56764A638D0639F /* FCBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B458107E3B5739299955AE86EF445 /* FCBCentralManagerDelegate.swift */; };
+		1D6AE58C3569128D2B4951F16D044EC2 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A45FD582D305FCFD50F437D88767154 /* Prelude.framework */; };
+		22FE51B673499670609B1378F06791C2 /* LithoOperators-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F547809413131BB7815D03ED32E0457 /* LithoOperators-dummy.m */; };
+		2CC6C6BF63E07A4C0B3F032B59AA0AEB /* FPUISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEA3573560007BA9D82F7FF820EF1C /* FPUISearchBarDelegate.swift */; };
+		2CCAB4DD4D017B8B7C9473022A91FA0D /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221D8C43D7DA3A7CB2B8D1CFCAD859B /* Fix.swift */; };
+		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0D0CD571FF3AE630221ADD9DB2A0D /* UIImage+Compare.m */; };
+		2E4C0BD2363ABABB6470FBA5415985AA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CC6F37BBE1E2DF52C4D33E5FE647B1A /* QuartzCore.framework */; };
+		2F4A3284D38FD83078C5FC5CC5C2F602 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CCBD26FFC6615DF06E4F4EAA7210CD /* Foundation.framework */; };
+		3578D6B55650BB12818200C28BBD0696 /* FPUITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66C0F877111F4A412411B605E2D5F00 /* FPUITableViewDelegate.swift */; };
+		3B2C409A53ECC66D46B56F20CB265089 /* KeyPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1722832123949F1241C2D05C141D0F79 /* KeyPaths.swift */; };
+		40039E0AF0D764360B1D4FC4F7950D2E /* UIApplication+StrictKeyWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B9A56443321B4CC6B8EBF8A771C3AA2 /* UIApplication+StrictKeyWindow.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		41CCE00FCDA78119C692C2F6CA302FD4 /* UIViewController+PushPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE41FB2532016922796EE904629C9E4B /* UIViewController+PushPop.swift */; };
+		463CEC0691B9B6091B68DB525BE9B99C /* Optional.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD4DFC6A63836B9604EE261C2047075 /* Optional.swift */; };
+		4E4AB631E58FADDB6015F5ACFAE9FC36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CCBD26FFC6615DF06E4F4EAA7210CD /* Foundation.framework */; };
+		4F99D9E0462711DDA1E690CEF29BBE6D /* Pods-fuikit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 527B39D693427D722657AEC5E4ED6A4A /* Pods-fuikit_Example-dummy.m */; };
 		5726A0B08C9877C1710A9C5EB0FDC6BA /* Pods-fuikit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 482C734233F7BE78A0F365E7E6C1263B /* Pods-fuikit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58EAF2E25E9BD251CA47E29D572B21FD /* FPUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DB9B40CBF6DD74790C64E82AE5419A9 /* FPUITextFieldDelegate.swift */; };
+		614023318A8D81956250087B40C20003 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CCBD26FFC6615DF06E4F4EAA7210CD /* Foundation.framework */; };
 		65EF76C25A417D8406E8A078D155834C /* Pods-fuikit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E93F17BD1C7C4B3805F662C9394FDB2 /* Pods-fuikit_Tests-dummy.m */; };
-		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */; };
-		77BF56EA7831E7A8CBF1C3AE38496891 /* FCBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5D5B9B4EF4EFE28488DBA0135220BC5 /* FCBCentralManagerDelegate.swift */; };
-		7999F1A4C5A228783313C4F9420D7C33 /* fuikit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E622459C9C19231B2356B6C9A7183428 /* fuikit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		845D1AF0AEBCDC9F44C0F3BAFABBD293 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */; };
-		887A7A4F7637CAF5C7A5B258303F3900 /* FPUICollectionViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A8C90B77759E820C40F81D2449FBE46 /* FPUICollectionViewViewController.xib */; };
-		8A38F9DC947B18485C82CAD5C2DB327C /* FCBPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBB38CCA72CEE618296920A613FA7E8 /* FCBPeripheralManager.swift */; };
-		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */; };
-		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		933972836DB349B235D4F1D87498692F /* FPUICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4DAF03C6138359571A64A6A74A86C /* FPUICollectionViewDelegate.swift */; };
-		96632B58BA7BDCBBAD39C15DFF796E71 /* FPUITableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F9BAAA04A1D4F9FA9B134CFAFC5186D2 /* FPUITableViewViewController.xib */; };
-		9CBFD72BAA468BCAA0F9D0C6115B175D /* Pods-fuikit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E5346657218E665D7AA98C1EF0407AF9 /* Pods-fuikit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */; };
-		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */; };
-		AF5BF5208757E964DF126A3BEFFFCE60 /* FPUITableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E57411F227F0FC5779DA84ED849EDE /* FPUITableViewViewController.swift */; };
-		B373A4CADB0F5B682398E3477AFED5CF /* FPUITextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87046A69C743BCCAA4906AAB505E20A3 /* FPUITextFieldDelegate.swift */; };
-		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */; };
-		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6686DA413774527D5B6BDBA97A2B861 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */; };
-		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		DE430F6011E241116C3CA39A2F1B1672 /* Pods-fuikit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 527B39D693427D722657AEC5E4ED6A4A /* Pods-fuikit_Example-dummy.m */; };
-		E0427B0DE01F19B7AA13D18D4FDA864D /* UIViewController+PushPop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B3C02FA72AFDD2452736F465D949D3F /* UIViewController+PushPop.swift */; };
-		E266380448566B8BC91090202E7FE797 /* FPUITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C2E7A403152196B8E00E22700CB559 /* FPUITableViewDataSource.swift */; };
-		E4BBC5CDEB087839F6D2937862BBAC37 /* FPUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F04F2384003C91A2E505BB8A6128389 /* FPUIViewController.swift */; };
-		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */; };
-		EEA6862BFC89BFBCEEBAE2FF932B88B6 /* FPUICollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84E3F95F7DD9D179AE987FDCE30BD33 /* FPUICollectionViewViewController.swift */; };
-		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6651E4CD591D25B2192A73211EB94846 /* Prelude-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E4F8DFDDD14F1FBA76413F4ADBEBD5 /* Prelude-dummy.m */; };
+		6DBC8EB7532E931C2FBDA71D1E0B66A4 /* FBSnapshotTestCase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B77A5E3EFF3E8619CBCE13E8E0EAAE /* FBSnapshotTestCase-dummy.m */; };
+		734ED8EDA601C8E6673B60EF800C3F21 /* FPUITableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99E062027663C9446212D146E630AB67 /* FPUITableViewViewController.swift */; };
+		81EF25A4385937A984E3D383D15B67E7 /* LithoOperators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 901BA713FD4AFD2744F97CE9CACE13EE /* LithoOperators.swift */; };
+		820DD2EBE12A4E43E8BA93A699D865BF /* FPUICollectionViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622268607B472C5EDD0EA8577B100034 /* FPUICollectionViewDelegate.swift */; };
+		88396E68DC05A379282F3B374F75F43C /* FBSnapshotTestController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A54BE4C66F5A9438EA12BB7F706D991 /* FBSnapshotTestController.m */; };
+		88F9CEB66DC2DEDB9A975CCEC15C2550 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CCBD26FFC6615DF06E4F4EAA7210CD /* Foundation.framework */; };
+		8A92B5FE51CB63AC68078EF227C1D452 /* FPUICollectionViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA4C86CC5E7410229C9923E8BDDCA5AD /* FPUICollectionViewViewController.swift */; };
+		8CE3BF0ACE07EA42DD5DAC871BF4B767 /* FBSnapshotTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 19A3EA8A9BFCC6FEB5239999EEFB7D4A /* FBSnapshotTestCase.m */; };
+		8EFFCFA610EE388F673D5CB99BD04CFB /* Tuples.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5080F5CA9FE4A8A84D94D0A046ADDBDC /* Tuples.swift */; };
+		90142C6259374E18E640396A59AD379A /* FBSnapshotTestController.h in Headers */ = {isa = PBXBuildFile; fileRef = 12941B1B12621DD9E7EC8E0B855E6646 /* FBSnapshotTestController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9699A68C81E020BC0DB9B46037566D31 /* fuikit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 01C063FC733D027618B6BD739D69B7E9 /* fuikit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9789515E55A14AD811B3C248D897BFA6 /* FPUICollectionViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = EB182B2DB0F79A633719B23DF4CCA3BB /* FPUICollectionViewViewController.xib */; };
+		980C4C7EE06B4E7864A854BDEFF0DAE5 /* Prelude.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD7B1AE272C879657E0F7A3A404C9B97 /* Prelude.swift */; };
+		99A058B5391643BDB4BA40DBEA8052F6 /* Curry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 02B9575BFBF47967D72DDA42115B1614 /* Curry.swift */; };
+		9D65089019D558E5A9661F2DCAD20313 /* SwiftSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FE96F9645659ED180B08C9F7904AB87 /* SwiftSupport.swift */; };
+		9E186C8BB7E33BE5CB03D6C8953CBDFC /* Optionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E2B816C71240FB6F4B0EE97EA877459 /* Optionals.swift */; };
+		A3A9580F906FEF6233009BCC23FF2507 /* FPUITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8DC7A366D1160462945EF0C23C7F64D /* FPUITableViewDataSource.swift */; };
+		A525E29E0A8079B35B793D8A2B5FBDF2 /* UIImage+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = 71DE9FF79378FF5D42B90497D0AF2457 /* UIImage+Snapshot.m */; };
+		A55AEF782B6171A99712E4E0482D8156 /* Prelude-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C5116EE8724DBEC3BE2B824296AD37D /* Prelude-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A645EA05331D9108C8BEC0F7F9E780B2 /* FUIFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2948084695C92132578B48199089C78E /* FUIFunctions.swift */; };
+		A7FD77A3DC98E79D5A7FF6B92B99A1A0 /* FPUITableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CF31837BB0D5FC0265F9D65D12EE86 /* FPUITableViewViewController.xib */; };
+		AA4A56BF94736C43227C24F4638D8962 /* LithoOperators-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0557609E3A462E1749772DDAEC2F9C5 /* LithoOperators-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B5ACB6AB2A8167B7114433515CE79AC9 /* FCBPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1FB693D67EBC7D7669A7C72670B2A /* FCBPeripheralManager.swift */; };
+		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E9E10E1BF528E94480449B16B12BDC /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		BBCA657482AD04BC47468292BB256306 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0D0C272480F9A489CB461B9C91F4F /* Compose.swift */; };
+		BD4953074A12E769ED4E6C94F5E73694 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C9C258F75E6596B1FBF6F8E8F69873B /* UIKit.framework */; };
+		BF4940E975AD85222D242A978FA2E84F /* FPUIImagePickerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F15EC12B7C6856482445BC796F1C0E6 /* FPUIImagePickerDelegate.swift */; };
+		C49D52712466511E332C952834C81FE1 /* FBSnapshotTestCasePlatform.h in Headers */ = {isa = PBXBuildFile; fileRef = D6BD25ABCD085ABC1B0D9ED019F9064E /* FBSnapshotTestCasePlatform.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C87B5302C37EDD872448F6A9E7CA0FD0 /* FPUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F7BD5E5FABCD24C4BFA5C69ECFF336 /* FPUIViewController.swift */; };
+		CA63ADACAC6C2BF1E30108E6BEF68A09 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CCBD26FFC6615DF06E4F4EAA7210CD /* Foundation.framework */; };
+		CC4241217695DFCB841C55429038BF29 /* fuikit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E8451D54C0FF6A44AF66B85A7F57738 /* fuikit-dummy.m */; };
+		D04AAC8B22E4A4DC4F39891C4E52F251 /* UIImage+Diff.h in Headers */ = {isa = PBXBuildFile; fileRef = 198A43EB1DCB0B15BA5CBBC8E68F0DFA /* UIImage+Diff.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		D105F523A729B04F45E17202427B0D9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05CCBD26FFC6615DF06E4F4EAA7210CD /* Foundation.framework */; };
+		E52F0595EEE8D98621F56D03140C67CD /* FPUITextViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D29EDAEFD6E8FF3167C25F4F4A12494B /* FPUITextViewDelegate.swift */; };
+		E80B8D4E16892F535359517290D51999 /* Comparables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 418944CDE746607A96966A4E634275CF /* Comparables.swift */; };
+		E8AC509D18EBF21B1FEA909652A01108 /* FBSnapshotTestCasePlatform.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2863022812C1C8F0C969FAF1A3E4FF /* FBSnapshotTestCasePlatform.m */; };
+		F08D1549EF3CF8237DFF8126D19ED56F /* Dictionaries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B974B8FBE3470E16ACD61B843C94F2 /* Dictionaries.swift */; };
+		F1AAAE00BB32B733B238E2B4E8424506 /* UIImage+Compare.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EF8A5F370167C069EC7B6C0488B594A /* UIImage+Compare.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		F2D5AD7E08B0CDEDC6230DA0B5A23900 /* ArgumentManipulation.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD21D304BCC56F54D3AD607CC199B427 /* ArgumentManipulation.swift */; };
+		F720FAF13A108CE6901E0A8B0580E1E8 /* FBSnapshotTestCase-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3844B3018A5011CB7C2CAB544E15B88A /* FBSnapshotTestCase-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA41D6F695FD40A8321DE3F9A924366D /* Try.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C209740266D6B2F13B887564C529C9 /* Try.swift */; };
+		FB170E516FC29526922F546C6458340E /* Arrays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C9A434B78A28F8B411BAAD644FFF2C2 /* Arrays.swift */; };
+		FB20F499B7BA3A8671BB0152AD7D784F /* LithoOperators.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4830F955D67BB513870FC4DA43A2A088 /* LithoOperators.framework */; };
+		FD02A4442A88DE274924C1F82868B130 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19167D9FBAF65277FF729BF23E230B59 /* Application.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		0974DBC7FD73F8C70EDFC65FD443AF4E /* PBXContainerItemProxy */ = {
+		3CE6CE3658B16DCC5BA601D6C77B6C45 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C04700E22229A736E5C110BBF44E6112;
-			remoteInfo = fuikit;
+			remoteGlobalIDString = BDE9651E3D91FEDF74EB17C3CBDD3742;
+			remoteInfo = Prelude;
 		};
-		820D8D01DB145BB582C5EFCEB8EC45AE /* PBXContainerItemProxy */ = {
+		991E3188E8CE2CFFBA213FB348F03D1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
-			remoteInfo = FBSnapshotTestCase;
+			remoteGlobalIDString = BDE9651E3D91FEDF74EB17C3CBDD3742;
+			remoteInfo = Prelude;
 		};
-		8779D6E2D4B35E2DE7DCF25B7FF90259 /* PBXContainerItemProxy */ = {
+		A9155CDCC17F7DA78AB31E5CB00C7A18 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23B1651D4D0DDA611CCBAFB8BFEED54;
+			remoteInfo = LithoOperators;
+		};
+		AB1C959D71AFF78787CEF9A040E7200B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F23B1651D4D0DDA611CCBAFB8BFEED54;
+			remoteInfo = LithoOperators;
+		};
+		CAC3AECF9D8F948D99445AE791B45A1C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 4F008762D47E2CABF0CBA1B5D9F2AFED;
 			remoteInfo = "Pods-fuikit_Example";
 		};
+		E3B290407358C510032A43DEAAE9789B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C04700E22229A736E5C110BBF44E6112;
+			remoteInfo = fuikit;
+		};
+		FFA2113B80E58C3A197857F9BBD3AB50 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98A98149697C80CEF8D5772791E92E66;
+			remoteInfo = FBSnapshotTestCase;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = fuikit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1A8C90B77759E820C40F81D2449FBE46 /* FPUICollectionViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FPUICollectionViewViewController.xib; path = fuikit/Classes/Core/FPUICollectionViewViewController.xib; sourceTree = "<group>"; };
-		1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		1B9C875CB165EEAD6B1B878A938622A8 /* fuikit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "fuikit-Info.plist"; sourceTree = "<group>"; };
-		1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		01C063FC733D027618B6BD739D69B7E9 /* fuikit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fuikit-umbrella.h"; sourceTree = "<group>"; };
+		02B9575BFBF47967D72DDA42115B1614 /* Curry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Curry.swift; path = Prelude/Curry.swift; sourceTree = "<group>"; };
+		05CCBD26FFC6615DF06E4F4EAA7210CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		08A7FDB617B2A77799F7B7E3ED5A2CAF /* FCBPeripheralManagerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FCBPeripheralManagerDelegate.swift; sourceTree = "<group>"; };
+		0F547809413131BB7815D03ED32E0457 /* LithoOperators-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LithoOperators-dummy.m"; sourceTree = "<group>"; };
+		0FC679A41D0D34FD873B7D9F9E6BE8BB /* Prelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Prelude.framework; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		12941B1B12621DD9E7EC8E0B855E6646 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
+		14E4F8DFDDD14F1FBA76413F4ADBEBD5 /* Prelude-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Prelude-dummy.m"; sourceTree = "<group>"; };
+		1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = fuikit.framework; path = fuikit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1722832123949F1241C2D05C141D0F79 /* KeyPaths.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyPaths.swift; path = Sources/LithoOperators/Classes/KeyPaths.swift; sourceTree = "<group>"; };
+		19167D9FBAF65277FF729BF23E230B59 /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Application.swift; path = Prelude/Application.swift; sourceTree = "<group>"; };
+		198A43EB1DCB0B15BA5CBBC8E68F0DFA /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
+		19A3EA8A9BFCC6FEB5239999EEFB7D4A /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
+		1E8451D54C0FF6A44AF66B85A7F57738 /* fuikit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "fuikit-dummy.m"; sourceTree = "<group>"; };
+		1F2863022812C1C8F0C969FAF1A3E4FF /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		212E2C31324EC69132735B77E7296CCB /* Pods-fuikit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fuikit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		2695EBC782D0ED9FC1DD6E4771CD7EA5 /* fuikit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = fuikit.modulemap; sourceTree = "<group>"; };
-		277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		28F4B902DC7905D6AD97A48D4A7E99BE /* fuikit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fuikit.release.xcconfig; sourceTree = "<group>"; };
-		2A24A21253EB7079176B4936F20A8631 /* fuikit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fuikit.debug.xcconfig; sourceTree = "<group>"; };
-		2BAD2195F7113D8383484C6E43A19C37 /* FPUIImagePickerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUIImagePickerDelegate.swift; sourceTree = "<group>"; };
-		3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		3402C02B0FA4F5B231F7FEF671DA893F /* FCLLocationManagerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FCLLocationManagerDelegate.swift; sourceTree = "<group>"; };
-		3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		22780B2455E23EDC08540199F2D3159C /* fuikit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = fuikit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2539CBC46DCAA0C4AB787901A0CF976F /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
+		28536DB7C38A1F2E1139E9B6D173B8AD /* Flip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flip.swift; path = Prelude/Flip.swift; sourceTree = "<group>"; };
+		2948084695C92132578B48199089C78E /* FUIFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FUIFunctions.swift; sourceTree = "<group>"; };
+		2AD8046C23EC5DDBA875E724670FB23C /* LithoOperators.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LithoOperators.release.xcconfig; sourceTree = "<group>"; };
+		2B9A56443321B4CC6B8EBF8A771C3AA2 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
+		308BEC9395BE39028FF391C180E0E536 /* fuikit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fuikit.release.xcconfig; sourceTree = "<group>"; };
+		33D2A25ABF91DCCC5D553354F2FE541D /* Tuple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tuple.swift; path = Prelude/Tuple.swift; sourceTree = "<group>"; };
+		37C55777A2AF7892A3CF777A2D4DE21C /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
+		3844B3018A5011CB7C2CAB544E15B88A /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
+		38B5A40BF86D75EAF7358F31D1E1EB9C /* fuikit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fuikit-prefix.pch"; sourceTree = "<group>"; };
+		3CC6F37BBE1E2DF52C4D33E5FE647B1A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		418944CDE746607A96966A4E634275CF /* Comparables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comparables.swift; path = Sources/LithoOperators/Classes/Comparables.swift; sourceTree = "<group>"; };
 		43C638B917422BFFCEAA43E3ABF7E90B /* Pods-fuikit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-fuikit_Tests.modulemap"; sourceTree = "<group>"; };
-		4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
 		482C734233F7BE78A0F365E7E6C1263B /* Pods-fuikit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fuikit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
-		4FA5108B8AF729436F1FCAF5D719B743 /* fuikit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "fuikit-dummy.m"; sourceTree = "<group>"; };
+		4830F955D67BB513870FC4DA43A2A088 /* LithoOperators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LithoOperators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E2B816C71240FB6F4B0EE97EA877459 /* Optionals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optionals.swift; path = Sources/LithoOperators/Classes/Optionals.swift; sourceTree = "<group>"; };
+		5080F5CA9FE4A8A84D94D0A046ADDBDC /* Tuples.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tuples.swift; path = Sources/LithoOperators/Classes/Tuples.swift; sourceTree = "<group>"; };
 		527B39D693427D722657AEC5E4ED6A4A /* Pods-fuikit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fuikit_Example-dummy.m"; sourceTree = "<group>"; };
-		57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5F04F2384003C91A2E505BB8A6128389 /* FPUIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUIViewController.swift; sourceTree = "<group>"; };
-		656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		6AB4DAF03C6138359571A64A6A74A86C /* FPUICollectionViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUICollectionViewDelegate.swift; sourceTree = "<group>"; };
-		6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
+		55BE39C5F7012F359161D7701FF223DA /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		576B458107E3B5739299955AE86EF445 /* FCBCentralManagerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FCBCentralManagerDelegate.swift; sourceTree = "<group>"; };
+		584F2F4AEEFFED7D4702DF36CCF5B7D9 /* FBSnapshotTestCase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.release.xcconfig; sourceTree = "<group>"; };
+		59770FFC2AF46E50939ECE69DC73706F /* LithoOperators-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LithoOperators-prefix.pch"; sourceTree = "<group>"; };
+		5AFF3402796086FF9F8A4150BF407795 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FBSnapshotTestCase.framework; path = FBSnapshotTestCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C9C258F75E6596B1FBF6F8E8F69873B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5ED0D0CD571FF3AE630221ADD9DB2A0D /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
+		5F0FD9C79217C14AA3D748C047DB07EB /* Prelude-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Prelude-Info.plist"; sourceTree = "<group>"; };
+		60C209740266D6B2F13B887564C529C9 /* Try.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Try.swift; path = Sources/LithoOperators/Classes/Try.swift; sourceTree = "<group>"; };
+		60FCA4B84CEE0CEC51F5C9E2D6769688 /* fuikit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fuikit.debug.xcconfig; sourceTree = "<group>"; };
+		622268607B472C5EDD0EA8577B100034 /* FPUICollectionViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUICollectionViewDelegate.swift; sourceTree = "<group>"; };
+		6EF8A5F370167C069EC7B6C0488B594A /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
+		6F15EC12B7C6856482445BC796F1C0E6 /* FPUIImagePickerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUIImagePickerDelegate.swift; sourceTree = "<group>"; };
+		71DE9FF79378FF5D42B90497D0AF2457 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
 		73898FD39CDEBB19A4397E5D0863835D /* Pods-fuikit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fuikit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		745A9307167912035205A41B4374E912 /* LithoOperators.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LithoOperators.debug.xcconfig; sourceTree = "<group>"; };
 		746E1007D80B8BC895C55DEAFD97C343 /* Pods-fuikit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fuikit_Tests-Info.plist"; sourceTree = "<group>"; };
 		74BC18399BAB520AB656B8536A67D162 /* Pods-fuikit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fuikit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		7D34FFBAB7CF606227710C7D7A8C849C /* FPUITableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUITableViewDelegate.swift; sourceTree = "<group>"; };
-		7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		78E9E10E1BF528E94480449B16B12BDC /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
+		7C9A434B78A28F8B411BAAD644FFF2C2 /* Arrays.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Arrays.swift; path = Sources/LithoOperators/Classes/Arrays.swift; sourceTree = "<group>"; };
+		7CE7628AC8A6CDDFBD4948C84E583236 /* fuikit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "fuikit-Info.plist"; sourceTree = "<group>"; };
+		7DB9B40CBF6DD74790C64E82AE5419A9 /* FPUITextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUITextFieldDelegate.swift; sourceTree = "<group>"; };
 		7E93F17BD1C7C4B3805F662C9394FDB2 /* Pods-fuikit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fuikit_Tests-dummy.m"; sourceTree = "<group>"; };
-		8040DD853401056E874A96317D7CB207 /* fuikit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = fuikit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		87046A69C743BCCAA4906AAB505E20A3 /* FPUITextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUITextFieldDelegate.swift; sourceTree = "<group>"; };
-		88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		8B3C02FA72AFDD2452736F465D949D3F /* UIViewController+PushPop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+PushPop.swift"; sourceTree = "<group>"; };
-		8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		8EEC56484876FB2BF92F5140D3A1889E /* FPUITextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUITextViewDelegate.swift; sourceTree = "<group>"; };
-		9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
-		94A39AA2FBB1083F3247FB2B6C2060A1 /* FCBPeripheralManagerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FCBPeripheralManagerDelegate.swift; sourceTree = "<group>"; };
-		94FC401755D75E784216596117624F70 /* Pods_fuikit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fuikit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		89552B38982338FDC23A65A7FC895F0E /* FCLLocationManagerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FCLLocationManagerDelegate.swift; sourceTree = "<group>"; };
+		8A54BE4C66F5A9438EA12BB7F706D991 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
+		8C5116EE8724DBEC3BE2B824296AD37D /* Prelude-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Prelude-umbrella.h"; sourceTree = "<group>"; };
+		901BA713FD4AFD2744F97CE9CACE13EE /* LithoOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LithoOperators.swift; path = Sources/LithoOperators/Classes/LithoOperators.swift; sourceTree = "<group>"; };
+		90CF31837BB0D5FC0265F9D65D12EE86 /* FPUITableViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FPUITableViewViewController.xib; path = fuikit/Classes/Core/FPUITableViewViewController.xib; sourceTree = "<group>"; };
+		948A933FE9626F648643F26DDBAEF25C /* Prelude.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Prelude.release.xcconfig; sourceTree = "<group>"; };
+		94FC401755D75E784216596117624F70 /* Pods_fuikit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_fuikit_Example.framework; path = "Pods-fuikit_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		99E062027663C9446212D146E630AB67 /* FPUITableViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUITableViewViewController.swift; sourceTree = "<group>"; };
+		9A45FD582D305FCFD50F437D88767154 /* Prelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F7DFB3C74213B813F1491CD7C2BDF8B /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
+		9FE96F9645659ED180B08C9F7904AB87 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
+		A2052DF3E461816D087E5E85A9FF1136 /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
+		A329B977C1D25A8C14D758ACB9B2B13D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		A39136DA077E2CAF21FEA70486088A2F /* Pods-fuikit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fuikit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		A5C2E7A403152196B8E00E22700CB559 /* FPUITableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUITableViewDataSource.swift; sourceTree = "<group>"; };
-		A84E3F95F7DD9D179AE987FDCE30BD33 /* FPUICollectionViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUICollectionViewViewController.swift; sourceTree = "<group>"; };
+		A8DC7A366D1160462945EF0C23C7F64D /* FPUITableViewDataSource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUITableViewDataSource.swift; sourceTree = "<group>"; };
+		AA23EDBB6DE365908F26D1E60733E05D /* Prelude.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Prelude.debug.xcconfig; sourceTree = "<group>"; };
 		AB49AA9EB707A81608A2F9D75BB75CA5 /* Pods-fuikit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fuikit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		ABAF7B191E1FF8709C434AAF4508ACD2 /* Pods_fuikit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fuikit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		AFBB38CCA72CEE618296920A613FA7E8 /* FCBPeripheralManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FCBPeripheralManager.swift; sourceTree = "<group>"; };
-		B5D5B9B4EF4EFE28488DBA0135220BC5 /* FCBCentralManagerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FCBCentralManagerDelegate.swift; sourceTree = "<group>"; };
+		ABAF7B191E1FF8709C434AAF4508ACD2 /* Pods_fuikit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_fuikit_Tests.framework; path = "Pods-fuikit_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F7BD5E5FABCD24C4BFA5C69ECFF336 /* FPUIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUIViewController.swift; sourceTree = "<group>"; };
+		B5B77A5E3EFF3E8619CBCE13E8E0EAAE /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		B620848EA0F4BD801F45F5D63407356A /* Pods-fuikit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fuikit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		B686D0B3C42AB0507300F8A97E3AFE43 /* Pods-fuikit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fuikit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		B9AD3559F5AF2BD7581704035FABBD45 /* Pods-fuikit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fuikit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		BCBDAF2E667A301E7C1F390606114DD8 /* FPUISearchBarDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUISearchBarDelegate.swift; sourceTree = "<group>"; };
 		C04E7E07042C2E4A5C49D99138CF4C6C /* Pods-fuikit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-fuikit_Example.modulemap"; sourceTree = "<group>"; };
-		CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		D0E57411F227F0FC5779DA84ED849EDE /* FPUITableViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUITableViewViewController.swift; sourceTree = "<group>"; };
-		D3719C7C1005AAC29A154B5369C0C3AA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		D40BEBCEBEF2208001B56CA54FAE927D /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		C65E57247C28BC2A41343D1743DA553A /* FBSnapshotTestCase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.debug.xcconfig; sourceTree = "<group>"; };
+		C6BEA3573560007BA9D82F7FF820EF1C /* FPUISearchBarDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUISearchBarDelegate.swift; sourceTree = "<group>"; };
+		CBFC78692640B2DB72BB696803CA8AF0 /* LithoOperators-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LithoOperators-Info.plist"; sourceTree = "<group>"; };
+		CFC7BEF58849A718F402CDDC137C226F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		D0557609E3A462E1749772DDAEC2F9C5 /* LithoOperators-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LithoOperators-umbrella.h"; sourceTree = "<group>"; };
+		D1B1FB693D67EBC7D7669A7C72670B2A /* FCBPeripheralManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FCBPeripheralManager.swift; sourceTree = "<group>"; };
+		D29EDAEFD6E8FF3167C25F4F4A12494B /* FPUITextViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUITextViewDelegate.swift; sourceTree = "<group>"; };
+		D504A810444E87E01591DE16643CECEA /* LithoOperators.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LithoOperators.modulemap; sourceTree = "<group>"; };
+		D5AC05B478A8021A4EE3497A2F62F684 /* Prelude-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Prelude-prefix.pch"; sourceTree = "<group>"; };
+		D66C0F877111F4A412411B605E2D5F00 /* FPUITableViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUITableViewDelegate.swift; sourceTree = "<group>"; };
+		D6BD25ABCD085ABC1B0D9ED019F9064E /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
 		D85860CEBB2364826D018DA466030444 /* Pods-fuikit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fuikit_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
+		D8B974B8FBE3470E16ACD61B843C94F2 /* Dictionaries.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Dictionaries.swift; path = Sources/LithoOperators/Classes/Dictionaries.swift; sourceTree = "<group>"; };
+		DAD4DFC6A63836B9604EE261C2047075 /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = Prelude/Optional.swift; sourceTree = "<group>"; };
+		DD21D304BCC56F54D3AD607CC199B427 /* ArgumentManipulation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ArgumentManipulation.swift; path = Sources/LithoOperators/Classes/ArgumentManipulation.swift; sourceTree = "<group>"; };
+		DD7B1AE272C879657E0F7A3A404C9B97 /* Prelude.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Prelude.swift; path = Prelude/Prelude.swift; sourceTree = "<group>"; };
+		DDE0D0C272480F9A489CB461B9C91F4F /* Compose.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compose.swift; path = Prelude/Compose.swift; sourceTree = "<group>"; };
+		DE41FB2532016922796EE904629C9E4B /* UIViewController+PushPop.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+PushPop.swift"; sourceTree = "<group>"; };
 		DECE372A3D9B479DF59C3927CC3375A3 /* Pods-fuikit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fuikit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		DF8B665455118A5EC3F61F66C3E11666 /* Prelude.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Prelude.modulemap; sourceTree = "<group>"; };
 		E5346657218E665D7AA98C1EF0407AF9 /* Pods-fuikit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fuikit_Example-umbrella.h"; sourceTree = "<group>"; };
-		E622459C9C19231B2356B6C9A7183428 /* fuikit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fuikit-umbrella.h"; sourceTree = "<group>"; };
-		E658F388F01C72599CA75537950B6095 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		E784DD520C80EDD9C7D2750350DB1F08 /* fuikit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fuikit-prefix.pch"; sourceTree = "<group>"; };
+		E9DDD902580A7AB9A8A6155699D277F3 /* fuikit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = fuikit.modulemap; sourceTree = "<group>"; };
+		EA4C86CC5E7410229C9923E8BDDCA5AD /* FPUICollectionViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUICollectionViewViewController.swift; sourceTree = "<group>"; };
+		EB182B2DB0F79A633719B23DF4CCA3BB /* FPUICollectionViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FPUICollectionViewViewController.xib; path = fuikit/Classes/Core/FPUICollectionViewViewController.xib; sourceTree = "<group>"; };
+		F02BB82B3FFD1B4A5BE1C7443584444C /* LithoOperators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LithoOperators.framework; path = LithoOperators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F221D8C43D7DA3A7CB2B8D1CFCAD859B /* Fix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fix.swift; path = Prelude/Fix.swift; sourceTree = "<group>"; };
 		F225DF1D0A8FDE58EE8E067753CD4C79 /* Pods-fuikit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fuikit_Example-Info.plist"; sourceTree = "<group>"; };
-		F9BAAA04A1D4F9FA9B134CFAFC5186D2 /* FPUITableViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FPUITableViewViewController.xib; path = fuikit/Classes/Core/FPUITableViewViewController.xib; sourceTree = "<group>"; };
-		FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
+		FBB8CC8308D8311C1D33A4CF72DB8E00 /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1F71E8DD3A6583D949C8F703ACEAB294 /* Frameworks */ = {
+		03FFAE9B57BD5561C6DA0CDABBB5D117 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6686DA413774527D5B6BDBA97A2B861 /* Foundation.framework in Frameworks */,
+				2F4A3284D38FD83078C5FC5CC5C2F602 /* Foundation.framework in Frameworks */,
+				1D6AE58C3569128D2B4951F16D044EC2 /* Prelude.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3DEE508E0CD98C568960C24C298E0888 /* Frameworks */ = {
+		0ACBCD5352A4D6CE3206EAFFD67E6A8C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				845D1AF0AEBCDC9F44C0F3BAFABBD293 /* Foundation.framework in Frameworks */,
+				D105F523A729B04F45E17202427B0D9E /* Foundation.framework in Frameworks */,
+				FB20F499B7BA3A8671BB0152AD7D784F /* LithoOperators.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14BBB0C4FB107951D91176E7863802F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88F9CEB66DC2DEDB9A975CCEC15C2550 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18E1DB1B3575F297AF6570ADDB18360A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				614023318A8D81956250087B40C20003 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,15 +306,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1AEC558DFB9960ECBB2CD233E78CDA48 /* Products */ = {
+		076976F9D273257C08D9C6314A781FB9 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
-				1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */,
-				94FC401755D75E784216596117624F70 /* Pods_fuikit_Example.framework */,
-				ABAF7B191E1FF8709C434AAF4508ACD2 /* Pods_fuikit_Tests.framework */,
+				D504A810444E87E01591DE16643CECEA /* LithoOperators.modulemap */,
+				0F547809413131BB7815D03ED32E0457 /* LithoOperators-dummy.m */,
+				CBFC78692640B2DB72BB696803CA8AF0 /* LithoOperators-Info.plist */,
+				59770FFC2AF46E50939ECE69DC73706F /* LithoOperators-prefix.pch */,
+				D0557609E3A462E1749772DDAEC2F9C5 /* LithoOperators-umbrella.h */,
+				745A9307167912035205A41B4374E912 /* LithoOperators.debug.xcconfig */,
+				2AD8046C23EC5DDBA875E724670FB23C /* LithoOperators.release.xcconfig */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/LithoOperators";
 			sourceTree = "<group>";
 		};
 		239393EE01B7A4B0A3BE20D3EDA320CB /* Targets Support Files */ = {
@@ -216,28 +328,6 @@
 				DFA5FB754ED67374A65C9640ADE2B4A9 /* Pods-fuikit_Tests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		2FEFCB77E8969B006F047BDD8996CAB7 /* CoreLocation */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = CoreLocation;
-			sourceTree = "<group>";
-		};
-		337379504A2FB23F87D30FDE589C34B0 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2695EBC782D0ED9FC1DD6E4771CD7EA5 /* fuikit.modulemap */,
-				4FA5108B8AF729436F1FCAF5D719B743 /* fuikit-dummy.m */,
-				1B9C875CB165EEAD6B1B878A938622A8 /* fuikit-Info.plist */,
-				E784DD520C80EDD9C7D2750350DB1F08 /* fuikit-prefix.pch */,
-				E622459C9C19231B2356B6C9A7183428 /* fuikit-umbrella.h */,
-				2A24A21253EB7079176B4936F20A8631 /* fuikit.debug.xcconfig */,
-				28F4B902DC7905D6AD97A48D4A7E99BE /* fuikit.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/fuikit";
 			sourceTree = "<group>";
 		};
 		3EE0E0CF390E498A877A541B9688840A /* Pods-fuikit_Example */ = {
@@ -257,114 +347,219 @@
 			path = "Target Support Files/Pods-fuikit_Example";
 			sourceTree = "<group>";
 		};
-		42BC3FD5547351611B37D880ECA45F6C /* Core */ = {
+		48365BE7B7AB02455A49E04D047E33D5 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				6AB4DAF03C6138359571A64A6A74A86C /* FPUICollectionViewDelegate.swift */,
-				A84E3F95F7DD9D179AE987FDCE30BD33 /* FPUICollectionViewViewController.swift */,
-				2BAD2195F7113D8383484C6E43A19C37 /* FPUIImagePickerDelegate.swift */,
-				BCBDAF2E667A301E7C1F390606114DD8 /* FPUISearchBarDelegate.swift */,
-				A5C2E7A403152196B8E00E22700CB559 /* FPUITableViewDataSource.swift */,
-				7D34FFBAB7CF606227710C7D7A8C849C /* FPUITableViewDelegate.swift */,
-				D0E57411F227F0FC5779DA84ED849EDE /* FPUITableViewViewController.swift */,
-				87046A69C743BCCAA4906AAB505E20A3 /* FPUITextFieldDelegate.swift */,
-				8EEC56484876FB2BF92F5140D3A1889E /* FPUITextViewDelegate.swift */,
-				5F04F2384003C91A2E505BB8A6128389 /* FPUIViewController.swift */,
-				8B3C02FA72AFDD2452736F465D949D3F /* UIViewController+PushPop.swift */,
-			);
-			name = Core;
-			path = fuikit/Classes/Core;
-			sourceTree = "<group>";
-		};
-		4BA2479549DD918290454B1CDCD0B92B /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				FEE661E58CA6655B39AA49AA4C021C33 /* FBSnapshotTestCase.h */,
-				277B6BE10C665F515606A22FD60C6DCC /* FBSnapshotTestCase.m */,
-				88B1DEEBF6316A84D7413645212492FF /* FBSnapshotTestCasePlatform.h */,
-				6ABB3EB3CCC5BCA82F40FE8DC87BB778 /* FBSnapshotTestCasePlatform.m */,
-				AE9FF9459FBCDC4AF88FB6B5A4CC1439 /* FBSnapshotTestController.h */,
-				7E1B7EA746BF6557FD565BAE12AF9198 /* FBSnapshotTestController.m */,
-				99A67367E018411D614EC8536A8A1C5B /* UIApplication+StrictKeyWindow.h */,
-				0F538C426803AE34255FC6E35B408CCA /* UIApplication+StrictKeyWindow.m */,
-				656116C8FA5458F45D4707110C9530EC /* UIImage+Compare.h */,
-				235A78CFFA6D8B8D86CACD733531CB13 /* UIImage+Compare.m */,
-				96187BF3038121CC146335E9FF0B0AFF /* UIImage+Diff.h */,
-				4568279DE47DC3AB91598E1317503995 /* UIImage+Diff.m */,
-				284833D18C244D2B42966B6EE425AA59 /* UIImage+Snapshot.h */,
-				D872A3EE224412D4057C234FBC629F9C /* UIImage+Snapshot.m */,
+				55BE39C5F7012F359161D7701FF223DA /* FBSnapshotTestCase.h */,
+				19A3EA8A9BFCC6FEB5239999EEFB7D4A /* FBSnapshotTestCase.m */,
+				D6BD25ABCD085ABC1B0D9ED019F9064E /* FBSnapshotTestCasePlatform.h */,
+				1F2863022812C1C8F0C969FAF1A3E4FF /* FBSnapshotTestCasePlatform.m */,
+				12941B1B12621DD9E7EC8E0B855E6646 /* FBSnapshotTestController.h */,
+				8A54BE4C66F5A9438EA12BB7F706D991 /* FBSnapshotTestController.m */,
+				2B9A56443321B4CC6B8EBF8A771C3AA2 /* UIApplication+StrictKeyWindow.h */,
+				FBB8CC8308D8311C1D33A4CF72DB8E00 /* UIApplication+StrictKeyWindow.m */,
+				6EF8A5F370167C069EC7B6C0488B594A /* UIImage+Compare.h */,
+				5ED0D0CD571FF3AE630221ADD9DB2A0D /* UIImage+Compare.m */,
+				198A43EB1DCB0B15BA5CBBC8E68F0DFA /* UIImage+Diff.h */,
+				A2052DF3E461816D087E5E85A9FF1136 /* UIImage+Diff.m */,
+				78E9E10E1BF528E94480449B16B12BDC /* UIImage+Snapshot.h */,
+				71DE9FF79378FF5D42B90497D0AF2457 /* UIImage+Snapshot.m */,
 			);
 			name = Core;
 			sourceTree = "<group>";
 		};
-		581203D845C7CD55A4EE2F6E8C3BB6FC /* FCB */ = {
+		5DCE8E2270F5B98628A22A56B56A73C6 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				B5D5B9B4EF4EFE28488DBA0135220BC5 /* FCBCentralManagerDelegate.swift */,
-				AFBB38CCA72CEE618296920A613FA7E8 /* FCBPeripheralManager.swift */,
-				94A39AA2FBB1083F3247FB2B6C2060A1 /* FCBPeripheralManagerDelegate.swift */,
+				DF8B665455118A5EC3F61F66C3E11666 /* Prelude.modulemap */,
+				14E4F8DFDDD14F1FBA76413F4ADBEBD5 /* Prelude-dummy.m */,
+				5F0FD9C79217C14AA3D748C047DB07EB /* Prelude-Info.plist */,
+				D5AC05B478A8021A4EE3497A2F62F684 /* Prelude-prefix.pch */,
+				8C5116EE8724DBEC3BE2B824296AD37D /* Prelude-umbrella.h */,
+				AA23EDBB6DE365908F26D1E60733E05D /* Prelude.debug.xcconfig */,
+				948A933FE9626F648643F26DDBAEF25C /* Prelude.release.xcconfig */,
 			);
-			name = FCB;
-			path = fuikit/Classes/FCB;
+			name = "Support Files";
+			path = "../Target Support Files/Prelude";
 			sourceTree = "<group>";
 		};
-		6E78227B00330C5346180821F67C73EF /* Development Pods */ = {
+		664502651BC923F178FC0300A901E01B /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				E89C6947ED388644B4A9E140928E02D7 /* fuikit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		81534862A56D95ADBCBB16F0554026D5 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				8040DD853401056E874A96317D7CB207 /* fuikit.podspec */,
-				D40BEBCEBEF2208001B56CA54FAE927D /* LICENSE */,
-				D3719C7C1005AAC29A154B5369C0C3AA /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */ = {
-			isa = PBXGroup;
-			children = (
-				3F0D66CF296ABBC57EC4D0452397E235 /* SwiftSupport.swift */,
-			);
-			name = SwiftSupport;
-			sourceTree = "<group>";
-		};
-		B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				CBFF6C5FD9C3A84274A9314D3E940B6E /* FBSnapshotTestCase.modulemap */,
-				1ADA6E655DC84D06359BD0ED5E36C783 /* FBSnapshotTestCase-dummy.m */,
-				B7103CA00AED20722C5B69CA5B4F6938 /* FBSnapshotTestCase-Info.plist */,
-				D08CEBB9BDD9EF7A662ECFC0305C169E /* FBSnapshotTestCase-prefix.pch */,
-				8E5923010B02074CAA9AAF6EA02D66AA /* FBSnapshotTestCase-umbrella.h */,
-				9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */,
-				4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */,
+				9F7DFB3C74213B813F1491CD7C2BDF8B /* FBSnapshotTestCase.modulemap */,
+				B5B77A5E3EFF3E8619CBCE13E8E0EAAE /* FBSnapshotTestCase-dummy.m */,
+				2539CBC46DCAA0C4AB787901A0CF976F /* FBSnapshotTestCase-Info.plist */,
+				37C55777A2AF7892A3CF777A2D4DE21C /* FBSnapshotTestCase-prefix.pch */,
+				3844B3018A5011CB7C2CAB544E15B88A /* FBSnapshotTestCase-umbrella.h */,
+				C65E57247C28BC2A41343D1743DA553A /* FBSnapshotTestCase.debug.xcconfig */,
+				584F2F4AEEFFED7D4702DF36CCF5B7D9 /* FBSnapshotTestCase.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/FBSnapshotTestCase";
 			sourceTree = "<group>";
 		};
-		BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */ = {
+		6D4828AD331D179E368078EE9A8DFB56 /* FCL */ = {
 			isa = PBXGroup;
 			children = (
-				FB2668559AE577E6E8078C0C291AD417 /* iOS */,
+				89552B38982338FDC23A65A7FC895F0E /* FCLLocationManagerDelegate.swift */,
 			);
-			name = Frameworks;
+			name = FCL;
+			path = fuikit/Classes/FCL;
 			sourceTree = "<group>";
 		};
-		BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */ = {
+		6E78227B00330C5346180821F67C73EF /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				4BA2479549DD918290454B1CDCD0B92B /* Core */,
-				B69B2ECE2D2C9A3924A9231138CE0BBC /* Support Files */,
-				906402ECC4C6C5EB58DD365FD2C64E92 /* SwiftSupport */,
+				9F03D55F150299C75861F645C3DE2033 /* fuikit */,
 			);
-			path = FBSnapshotTestCase;
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		7885C92259A8F5119280D54E7DF081E0 /* Prelude */ = {
+			isa = PBXGroup;
+			children = (
+				19167D9FBAF65277FF729BF23E230B59 /* Application.swift */,
+				DDE0D0C272480F9A489CB461B9C91F4F /* Compose.swift */,
+				02B9575BFBF47967D72DDA42115B1614 /* Curry.swift */,
+				F221D8C43D7DA3A7CB2B8D1CFCAD859B /* Fix.swift */,
+				28536DB7C38A1F2E1139E9B6D173B8AD /* Flip.swift */,
+				DAD4DFC6A63836B9604EE261C2047075 /* Optional.swift */,
+				DD7B1AE272C879657E0F7A3A404C9B97 /* Prelude.swift */,
+				33D2A25ABF91DCCC5D553354F2FE541D /* Tuple.swift */,
+				5DCE8E2270F5B98628A22A56B56A73C6 /* Support Files */,
+			);
+			name = Prelude;
+			path = Prelude;
+			sourceTree = "<group>";
+		};
+		7AF8D2C233E8DD56A9B9937CB7408F40 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				05CCBD26FFC6615DF06E4F4EAA7210CD /* Foundation.framework */,
+				3CC6F37BBE1E2DF52C4D33E5FE647B1A /* QuartzCore.framework */,
+				5C9C258F75E6596B1FBF6F8E8F69873B /* UIKit.framework */,
+				5AFF3402796086FF9F8A4150BF407795 /* XCTest.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		84D19DD9E8199C03D85B9DA736C24A38 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */,
+				1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */,
+				F02BB82B3FFD1B4A5BE1C7443584444C /* LithoOperators.framework */,
+				94FC401755D75E784216596117624F70 /* Pods_fuikit_Example.framework */,
+				ABAF7B191E1FF8709C434AAF4508ACD2 /* Pods_fuikit_Tests.framework */,
+				0FC679A41D0D34FD873B7D9F9E6BE8BB /* Prelude.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		910606A0BA2F67060A00EAD7164B3F19 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				22780B2455E23EDC08540199F2D3159C /* fuikit.podspec */,
+				CFC7BEF58849A718F402CDDC137C226F /* LICENSE */,
+				A329B977C1D25A8C14D758ACB9B2B13D /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		9EBD2EFC1B9B7681B6CD6F496F6D06AA /* LithoOperators */ = {
+			isa = PBXGroup;
+			children = (
+				DD21D304BCC56F54D3AD607CC199B427 /* ArgumentManipulation.swift */,
+				7C9A434B78A28F8B411BAAD644FFF2C2 /* Arrays.swift */,
+				418944CDE746607A96966A4E634275CF /* Comparables.swift */,
+				D8B974B8FBE3470E16ACD61B843C94F2 /* Dictionaries.swift */,
+				1722832123949F1241C2D05C141D0F79 /* KeyPaths.swift */,
+				901BA713FD4AFD2744F97CE9CACE13EE /* LithoOperators.swift */,
+				4E2B816C71240FB6F4B0EE97EA877459 /* Optionals.swift */,
+				60C209740266D6B2F13B887564C529C9 /* Try.swift */,
+				5080F5CA9FE4A8A84D94D0A046ADDBDC /* Tuples.swift */,
+				076976F9D273257C08D9C6314A781FB9 /* Support Files */,
+			);
+			name = LithoOperators;
+			path = LithoOperators;
+			sourceTree = "<group>";
+		};
+		9F03D55F150299C75861F645C3DE2033 /* fuikit */ = {
+			isa = PBXGroup;
+			children = (
+				EB182B2DB0F79A633719B23DF4CCA3BB /* FPUICollectionViewViewController.xib */,
+				90CF31837BB0D5FC0265F9D65D12EE86 /* FPUITableViewViewController.xib */,
+				CC8477E0356926B2F555CAFAF379029C /* Core */,
+				E7E28062BB1D8D16E0BAFD937E3E4801 /* CoreBluetooth */,
+				C16F46E0A3C272DBCF39D221733F88DC /* CoreLocation */,
+				A780697BAF32DB7AACB74DC17AF68748 /* FCB */,
+				6D4828AD331D179E368078EE9A8DFB56 /* FCL */,
+				910606A0BA2F67060A00EAD7164B3F19 /* Pod */,
+				A7B9400082E632725BFC1590D446CAE2 /* Support Files */,
+			);
+			name = fuikit;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		A780697BAF32DB7AACB74DC17AF68748 /* FCB */ = {
+			isa = PBXGroup;
+			children = (
+				576B458107E3B5739299955AE86EF445 /* FCBCentralManagerDelegate.swift */,
+				D1B1FB693D67EBC7D7669A7C72670B2A /* FCBPeripheralManager.swift */,
+				08A7FDB617B2A77799F7B7E3ED5A2CAF /* FCBPeripheralManagerDelegate.swift */,
+			);
+			name = FCB;
+			path = fuikit/Classes/FCB;
+			sourceTree = "<group>";
+		};
+		A7B9400082E632725BFC1590D446CAE2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E9DDD902580A7AB9A8A6155699D277F3 /* fuikit.modulemap */,
+				1E8451D54C0FF6A44AF66B85A7F57738 /* fuikit-dummy.m */,
+				7CE7628AC8A6CDDFBD4948C84E583236 /* fuikit-Info.plist */,
+				38B5A40BF86D75EAF7358F31D1E1EB9C /* fuikit-prefix.pch */,
+				01C063FC733D027618B6BD739D69B7E9 /* fuikit-umbrella.h */,
+				60FCA4B84CEE0CEC51F5C9E2D6769688 /* fuikit.debug.xcconfig */,
+				308BEC9395BE39028FF391C180E0E536 /* fuikit.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/fuikit";
+			sourceTree = "<group>";
+		};
+		BCE4D87A117455ADD31943D6D2F0809E /* SwiftSupport */ = {
+			isa = PBXGroup;
+			children = (
+				9FE96F9645659ED180B08C9F7904AB87 /* SwiftSupport.swift */,
+			);
+			name = SwiftSupport;
+			sourceTree = "<group>";
+		};
+		C16F46E0A3C272DBCF39D221733F88DC /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CoreLocation;
+			sourceTree = "<group>";
+		};
+		CC8477E0356926B2F555CAFAF379029C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				622268607B472C5EDD0EA8577B100034 /* FPUICollectionViewDelegate.swift */,
+				EA4C86CC5E7410229C9923E8BDDCA5AD /* FPUICollectionViewViewController.swift */,
+				6F15EC12B7C6856482445BC796F1C0E6 /* FPUIImagePickerDelegate.swift */,
+				C6BEA3573560007BA9D82F7FF820EF1C /* FPUISearchBarDelegate.swift */,
+				A8DC7A366D1160462945EF0C23C7F64D /* FPUITableViewDataSource.swift */,
+				D66C0F877111F4A412411B605E2D5F00 /* FPUITableViewDelegate.swift */,
+				99E062027663C9446212D146E630AB67 /* FPUITableViewViewController.swift */,
+				7DB9B40CBF6DD74790C64E82AE5419A9 /* FPUITextFieldDelegate.swift */,
+				D29EDAEFD6E8FF3167C25F4F4A12494B /* FPUITextViewDelegate.swift */,
+				B3F7BD5E5FABCD24C4BFA5C69ECFF336 /* FPUIViewController.swift */,
+				2948084695C92132578B48199089C78E /* FUIFunctions.swift */,
+				DE41FB2532016922796EE904629C9E4B /* UIViewController+PushPop.swift */,
+			);
+			name = Core;
+			path = fuikit/Classes/Core;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -372,9 +567,9 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				6E78227B00330C5346180821F67C73EF /* Development Pods */,
-				BA4F31F07263C99FC76E66D632A59F09 /* Frameworks */,
-				E81A37DBDE41E671312C56736544E2FA /* Pods */,
-				1AEC558DFB9960ECBB2CD233E78CDA48 /* Products */,
+				F2292592807A2507C7076423EE2C1640 /* Frameworks */,
+				F9B053D5546BFDAA64A9AB239889B38B /* Pods */,
+				84D19DD9E8199C03D85B9DA736C24A38 /* Products */,
 				239393EE01B7A4B0A3BE20D3EDA320CB /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -396,66 +591,60 @@
 			path = "Target Support Files/Pods-fuikit_Tests";
 			sourceTree = "<group>";
 		};
-		E81A37DBDE41E671312C56736544E2FA /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BD2D60DE56CBB8C87BA07E0C1CCD0592 /* FBSnapshotTestCase */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E89C6947ED388644B4A9E140928E02D7 /* fuikit */ = {
-			isa = PBXGroup;
-			children = (
-				1A8C90B77759E820C40F81D2449FBE46 /* FPUICollectionViewViewController.xib */,
-				F9BAAA04A1D4F9FA9B134CFAFC5186D2 /* FPUITableViewViewController.xib */,
-				42BC3FD5547351611B37D880ECA45F6C /* Core */,
-				EECE15DDB3AFC6E0BFBA6B09CEFE3D69 /* CoreBluetooth */,
-				2FEFCB77E8969B006F047BDD8996CAB7 /* CoreLocation */,
-				581203D845C7CD55A4EE2F6E8C3BB6FC /* FCB */,
-				F2170467664C8197F3F9D855A7E94F78 /* FCL */,
-				81534862A56D95ADBCBB16F0554026D5 /* Pod */,
-				337379504A2FB23F87D30FDE589C34B0 /* Support Files */,
-			);
-			name = fuikit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		EECE15DDB3AFC6E0BFBA6B09CEFE3D69 /* CoreBluetooth */ = {
+		E7E28062BB1D8D16E0BAFD937E3E4801 /* CoreBluetooth */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			name = CoreBluetooth;
 			sourceTree = "<group>";
 		};
-		F2170467664C8197F3F9D855A7E94F78 /* FCL */ = {
+		F2292592807A2507C7076423EE2C1640 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3402C02B0FA4F5B231F7FEF671DA893F /* FCLLocationManagerDelegate.swift */,
+				4830F955D67BB513870FC4DA43A2A088 /* LithoOperators.framework */,
+				9A45FD582D305FCFD50F437D88767154 /* Prelude.framework */,
+				7AF8D2C233E8DD56A9B9937CB7408F40 /* iOS */,
 			);
-			name = FCL;
-			path = fuikit/Classes/FCL;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FB2668559AE577E6E8078C0C291AD417 /* iOS */ = {
+		F535E4F9F281B7BEDC5451B0034D94BF /* FBSnapshotTestCase */ = {
 			isa = PBXGroup;
 			children = (
-				57221B54D014471C3D3E1925EFC917C8 /* Foundation.framework */,
-				3280BB5E7B57C31D41117A74F76E9DF3 /* QuartzCore.framework */,
-				1DA24A38BA9EE106B59E3D4C8DD1CE0E /* UIKit.framework */,
-				E658F388F01C72599CA75537950B6095 /* XCTest.framework */,
+				48365BE7B7AB02455A49E04D047E33D5 /* Core */,
+				664502651BC923F178FC0300A901E01B /* Support Files */,
+				BCE4D87A117455ADD31943D6D2F0809E /* SwiftSupport */,
 			);
-			name = iOS;
+			name = FBSnapshotTestCase;
+			path = FBSnapshotTestCase;
+			sourceTree = "<group>";
+		};
+		F9B053D5546BFDAA64A9AB239889B38B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F535E4F9F281B7BEDC5451B0034D94BF /* FBSnapshotTestCase */,
+				9EBD2EFC1B9B7681B6CD6F496F6D06AA /* LithoOperators */,
+				7885C92259A8F5119280D54E7DF081E0 /* Prelude */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		331470A940A55FABFD6CD468597111F7 /* Headers */ = {
+		076A3E791483B06FEEADFF8942785754 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CBFD72BAA468BCAA0F9D0C6115B175D /* Pods-fuikit_Example-umbrella.h in Headers */,
+				A55AEF782B6171A99712E4E0482D8156 /* Prelude-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33F93D8762A81C468E495779251A5526 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0044127195DBC5ABB8E0391BD049D64C /* Pods-fuikit_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,11 +671,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		775CAB3052039E3B3C5A1F80060FAE67 /* Headers */ = {
+		90F7780C86013C938E016AD67570179B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7999F1A4C5A228783313C4F9420D7C33 /* fuikit-umbrella.h in Headers */,
+				AA4A56BF94736C43227C24F4638D8962 /* LithoOperators-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF095B89F972F31CB1DC84C2433FEE59 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9699A68C81E020BC0DB9B46037566D31 /* fuikit-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,8 +702,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				57BFDA97766DAF35BEF98D87435E05F4 /* PBXTargetDependency */,
-				4BF16F8AFAD89E5B63D247B6EF1524DF /* PBXTargetDependency */,
+				E27668DBE9B74B823299C99ACEA8CC1C /* PBXTargetDependency */,
+				DFFF35EA4C56F3EA4B5BDFAA55804AF1 /* PBXTargetDependency */,
 			);
 			name = "Pods-fuikit_Tests";
 			productName = "Pods-fuikit_Tests";
@@ -515,17 +712,19 @@
 		};
 		4F008762D47E2CABF0CBA1B5D9F2AFED /* Pods-fuikit_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D923D11F4BED63612268F02013244937 /* Build configuration list for PBXNativeTarget "Pods-fuikit_Example" */;
+			buildConfigurationList = E10AFAFDA0408B68D4E1EFA674D8481A /* Build configuration list for PBXNativeTarget "Pods-fuikit_Example" */;
 			buildPhases = (
-				331470A940A55FABFD6CD468597111F7 /* Headers */,
-				A4DF7B1B90874A9E98E11FFDE78B3108 /* Sources */,
-				3DEE508E0CD98C568960C24C298E0888 /* Frameworks */,
-				407495BC828C23425970972A0E5E232D /* Resources */,
+				33F93D8762A81C468E495779251A5526 /* Headers */,
+				F3AE9063B134EDB44754037435D8EECE /* Sources */,
+				14BBB0C4FB107951D91176E7863802F8 /* Frameworks */,
+				18A851C14F6DCA36BA5B2126B8F51A0F /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				CA1E24E5FA451E864FE8A4A233287F80 /* PBXTargetDependency */,
+				21BBA4F7D4667CA49607160BA87C7C1B /* PBXTargetDependency */,
+				AFBDA1B24FA01F63D7504D7DA3399500 /* PBXTargetDependency */,
+				6E25C6718514517BAD620D8F8880B593 /* PBXTargetDependency */,
 			);
 			name = "Pods-fuikit_Example";
 			productName = "Pods-fuikit_Example";
@@ -550,22 +749,60 @@
 			productReference = 5C4F31330DFA99D699E4BDC8C3573D73 /* FBSnapshotTestCase.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C04700E22229A736E5C110BBF44E6112 /* fuikit */ = {
+		BDE9651E3D91FEDF74EB17C3CBDD3742 /* Prelude */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8C6F9838E2F721624FA987EC3E18EC5C /* Build configuration list for PBXNativeTarget "fuikit" */;
+			buildConfigurationList = 7B47E018D32A2BA0A51E9FD098ACC3B0 /* Build configuration list for PBXNativeTarget "Prelude" */;
 			buildPhases = (
-				775CAB3052039E3B3C5A1F80060FAE67 /* Headers */,
-				A13DC520B7390CA989D022B6C2FF2B0B /* Sources */,
-				1F71E8DD3A6583D949C8F703ACEAB294 /* Frameworks */,
-				AC6B0282BA23653289E217F33CF28EB8 /* Resources */,
+				076A3E791483B06FEEADFF8942785754 /* Headers */,
+				BE33186F579631F2396930F097298B42 /* Sources */,
+				18E1DB1B3575F297AF6570ADDB18360A /* Frameworks */,
+				51397B1B64577B03EBCE91A21BAAEA99 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
+			name = Prelude;
+			productName = Prelude;
+			productReference = 0FC679A41D0D34FD873B7D9F9E6BE8BB /* Prelude.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C04700E22229A736E5C110BBF44E6112 /* fuikit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 17421EE0A0F12881249CB5B3B5AAC8D8 /* Build configuration list for PBXNativeTarget "fuikit" */;
+			buildPhases = (
+				CF095B89F972F31CB1DC84C2433FEE59 /* Headers */,
+				FA895A8FB324E0E195FBA5CBAACF08F1 /* Sources */,
+				0ACBCD5352A4D6CE3206EAFFD67E6A8C /* Frameworks */,
+				4BCFACB1DDE0CFBAE618BEA38A864FDE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0BDFAED709FF67D9E1B7D23FFC866623 /* PBXTargetDependency */,
+			);
 			name = fuikit;
 			productName = fuikit;
 			productReference = 1625646DB035E380339899EF4E6A6FA6 /* fuikit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F23B1651D4D0DDA611CCBAFB8BFEED54 /* LithoOperators */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DE27641C7D61E499D1AE62110D517BE /* Build configuration list for PBXNativeTarget "LithoOperators" */;
+			buildPhases = (
+				90F7780C86013C938E016AD67570179B /* Headers */,
+				1FDD209BFC324745D4AAB1E62B7D76FC /* Sources */,
+				03FFAE9B57BD5561C6DA0CDABBB5D117 /* Frameworks */,
+				BE21250132EB47914A6ECF9CEA3BFA7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				932D1780BB7C88C8C66671F53F8DDEBB /* PBXTargetDependency */,
+			);
+			name = LithoOperators;
+			productName = LithoOperators;
+			productReference = F02BB82B3FFD1B4A5BE1C7443584444C /* LithoOperators.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -586,20 +823,38 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 1AEC558DFB9960ECBB2CD233E78CDA48 /* Products */;
+			productRefGroup = 84D19DD9E8199C03D85B9DA736C24A38 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */,
 				C04700E22229A736E5C110BBF44E6112 /* fuikit */,
+				F23B1651D4D0DDA611CCBAFB8BFEED54 /* LithoOperators */,
 				4F008762D47E2CABF0CBA1B5D9F2AFED /* Pods-fuikit_Example */,
 				2AC3A70A8FCB47B4642312CC406A6D06 /* Pods-fuikit_Tests */,
+				BDE9651E3D91FEDF74EB17C3CBDD3742 /* Prelude */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		407495BC828C23425970972A0E5E232D /* Resources */ = {
+		18A851C14F6DCA36BA5B2126B8F51A0F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BCFACB1DDE0CFBAE618BEA38A864FDE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9789515E55A14AD811B3C248D897BFA6 /* FPUICollectionViewViewController.xib in Resources */,
+				A7FD77A3DC98E79D5A7FF6B92B99A1A0 /* FPUITableViewViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		51397B1B64577B03EBCE91A21BAAEA99 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -620,46 +875,38 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AC6B0282BA23653289E217F33CF28EB8 /* Resources */ = {
+		BE21250132EB47914A6ECF9CEA3BFA7F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				887A7A4F7637CAF5C7A5B258303F3900 /* FPUICollectionViewViewController.xib in Resources */,
-				96632B58BA7BDCBBAD39C15DFF796E71 /* FPUITableViewViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		1FDD209BFC324745D4AAB1E62B7D76FC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F2D5AD7E08B0CDEDC6230DA0B5A23900 /* ArgumentManipulation.swift in Sources */,
+				FB170E516FC29526922F546C6458340E /* Arrays.swift in Sources */,
+				E80B8D4E16892F535359517290D51999 /* Comparables.swift in Sources */,
+				F08D1549EF3CF8237DFF8126D19ED56F /* Dictionaries.swift in Sources */,
+				3B2C409A53ECC66D46B56F20CB265089 /* KeyPaths.swift in Sources */,
+				22FE51B673499670609B1378F06791C2 /* LithoOperators-dummy.m in Sources */,
+				81EF25A4385937A984E3D383D15B67E7 /* LithoOperators.swift in Sources */,
+				9E186C8BB7E33BE5CB03D6C8953CBDFC /* Optionals.swift in Sources */,
+				FA41D6F695FD40A8321DE3F9A924366D /* Try.swift in Sources */,
+				8EFFCFA610EE388F673D5CB99BD04CFB /* Tuples.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A00B1B2026650A8717381DE72196A142 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				65EF76C25A417D8406E8A078D155834C /* Pods-fuikit_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A13DC520B7390CA989D022B6C2FF2B0B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				77BF56EA7831E7A8CBF1C3AE38496891 /* FCBCentralManagerDelegate.swift in Sources */,
-				8A38F9DC947B18485C82CAD5C2DB327C /* FCBPeripheralManager.swift in Sources */,
-				0A2FD8DF7587A721E8400916E40EDAFD /* FCBPeripheralManagerDelegate.swift in Sources */,
-				12086C588907728CA14BB9C7F0E30474 /* FCLLocationManagerDelegate.swift in Sources */,
-				933972836DB349B235D4F1D87498692F /* FPUICollectionViewDelegate.swift in Sources */,
-				EEA6862BFC89BFBCEEBAE2FF932B88B6 /* FPUICollectionViewViewController.swift in Sources */,
-				103C8A7D5003DC892DD9AE51B923D464 /* FPUIImagePickerDelegate.swift in Sources */,
-				2D2C44EC6D46F7C28DA68369B472DA25 /* fuikit-dummy.m in Sources */,
-				1F13A9FE1FE8086223DE06CFA644D632 /* FPUISearchBarDelegate.swift in Sources */,
-				E266380448566B8BC91090202E7FE797 /* FPUITableViewDataSource.swift in Sources */,
-				1339FA5E7FDB4BC53A1F6F9E5A55A169 /* FPUITableViewDelegate.swift in Sources */,
-				AF5BF5208757E964DF126A3BEFFFCE60 /* FPUITableViewViewController.swift in Sources */,
-				B373A4CADB0F5B682398E3477AFED5CF /* FPUITextFieldDelegate.swift in Sources */,
-				5563ABD50D810062D053DE281156E429 /* FPUITextViewDelegate.swift in Sources */,
-				E4BBC5CDEB087839F6D2937862BBAC37 /* FPUIViewController.swift in Sources */,
-				E0427B0DE01F19B7AA13D18D4FDA864D /* UIViewController+PushPop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,44 +926,107 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4DF7B1B90874A9E98E11FFDE78B3108 /* Sources */ = {
+		BE33186F579631F2396930F097298B42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE430F6011E241116C3CA39A2F1B1672 /* Pods-fuikit_Example-dummy.m in Sources */,
+				FD02A4442A88DE274924C1F82868B130 /* Application.swift in Sources */,
+				BBCA657482AD04BC47468292BB256306 /* Compose.swift in Sources */,
+				99A058B5391643BDB4BA40DBEA8052F6 /* Curry.swift in Sources */,
+				2CCAB4DD4D017B8B7C9473022A91FA0D /* Fix.swift in Sources */,
+				1745F918E343F304CDC06F402C5116B0 /* Flip.swift in Sources */,
+				463CEC0691B9B6091B68DB525BE9B99C /* Optional.swift in Sources */,
+				6651E4CD591D25B2192A73211EB94846 /* Prelude-dummy.m in Sources */,
+				980C4C7EE06B4E7864A854BDEFF0DAE5 /* Prelude.swift in Sources */,
+				182180398D980D105DC1921F97C491DC /* Tuple.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3AE9063B134EDB44754037435D8EECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F99D9E0462711DDA1E690CEF29BBE6D /* Pods-fuikit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA895A8FB324E0E195FBA5CBAACF08F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1944331B7E88394BD56764A638D0639F /* FCBCentralManagerDelegate.swift in Sources */,
+				B5ACB6AB2A8167B7114433515CE79AC9 /* FCBPeripheralManager.swift in Sources */,
+				11171043315A938633AAC2039C516931 /* FCBPeripheralManagerDelegate.swift in Sources */,
+				113A783E765076BED22DA0682C23514B /* FCLLocationManagerDelegate.swift in Sources */,
+				820DD2EBE12A4E43E8BA93A699D865BF /* FPUICollectionViewDelegate.swift in Sources */,
+				8A92B5FE51CB63AC68078EF227C1D452 /* FPUICollectionViewViewController.swift in Sources */,
+				BF4940E975AD85222D242A978FA2E84F /* FPUIImagePickerDelegate.swift in Sources */,
+				2CC6C6BF63E07A4C0B3F032B59AA0AEB /* FPUISearchBarDelegate.swift in Sources */,
+				A3A9580F906FEF6233009BCC23FF2507 /* FPUITableViewDataSource.swift in Sources */,
+				3578D6B55650BB12818200C28BBD0696 /* FPUITableViewDelegate.swift in Sources */,
+				734ED8EDA601C8E6673B60EF800C3F21 /* FPUITableViewViewController.swift in Sources */,
+				58EAF2E25E9BD251CA47E29D572B21FD /* FPUITextFieldDelegate.swift in Sources */,
+				E52F0595EEE8D98621F56D03140C67CD /* FPUITextViewDelegate.swift in Sources */,
+				C87B5302C37EDD872448F6A9E7CA0FD0 /* FPUIViewController.swift in Sources */,
+				A645EA05331D9108C8BEC0F7F9E780B2 /* FUIFunctions.swift in Sources */,
+				CC4241217695DFCB841C55429038BF29 /* fuikit-dummy.m in Sources */,
+				41CCE00FCDA78119C692C2F6CA302FD4 /* UIViewController+PushPop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4BF16F8AFAD89E5B63D247B6EF1524DF /* PBXTargetDependency */ = {
+		0BDFAED709FF67D9E1B7D23FFC866623 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-fuikit_Example";
-			target = 4F008762D47E2CABF0CBA1B5D9F2AFED /* Pods-fuikit_Example */;
-			targetProxy = 8779D6E2D4B35E2DE7DCF25B7FF90259 /* PBXContainerItemProxy */;
+			name = LithoOperators;
+			target = F23B1651D4D0DDA611CCBAFB8BFEED54 /* LithoOperators */;
+			targetProxy = AB1C959D71AFF78787CEF9A040E7200B /* PBXContainerItemProxy */;
 		};
-		57BFDA97766DAF35BEF98D87435E05F4 /* PBXTargetDependency */ = {
+		21BBA4F7D4667CA49607160BA87C7C1B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = FBSnapshotTestCase;
-			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
-			targetProxy = 820D8D01DB145BB582C5EFCEB8EC45AE /* PBXContainerItemProxy */;
+			name = LithoOperators;
+			target = F23B1651D4D0DDA611CCBAFB8BFEED54 /* LithoOperators */;
+			targetProxy = A9155CDCC17F7DA78AB31E5CB00C7A18 /* PBXContainerItemProxy */;
 		};
-		CA1E24E5FA451E864FE8A4A233287F80 /* PBXTargetDependency */ = {
+		6E25C6718514517BAD620D8F8880B593 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = fuikit;
 			target = C04700E22229A736E5C110BBF44E6112 /* fuikit */;
-			targetProxy = 0974DBC7FD73F8C70EDFC65FD443AF4E /* PBXContainerItemProxy */;
+			targetProxy = E3B290407358C510032A43DEAAE9789B /* PBXContainerItemProxy */;
+		};
+		932D1780BB7C88C8C66671F53F8DDEBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Prelude;
+			target = BDE9651E3D91FEDF74EB17C3CBDD3742 /* Prelude */;
+			targetProxy = 991E3188E8CE2CFFBA213FB348F03D1C /* PBXContainerItemProxy */;
+		};
+		AFBDA1B24FA01F63D7504D7DA3399500 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Prelude;
+			target = BDE9651E3D91FEDF74EB17C3CBDD3742 /* Prelude */;
+			targetProxy = 3CE6CE3658B16DCC5BA601D6C77B6C45 /* PBXContainerItemProxy */;
+		};
+		DFFF35EA4C56F3EA4B5BDFAA55804AF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-fuikit_Example";
+			target = 4F008762D47E2CABF0CBA1B5D9F2AFED /* Pods-fuikit_Example */;
+			targetProxy = CAC3AECF9D8F948D99445AE791B45A1C /* PBXContainerItemProxy */;
+		};
+		E27668DBE9B74B823299C99ACEA8CC1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FBSnapshotTestCase;
+			target = 98A98149697C80CEF8D5772791E92E66 /* FBSnapshotTestCase */;
+			targetProxy = FFA2113B80E58C3A197857F9BBD3AB50 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3952341C343DCAE6B97D6A9C90A39086 /* Debug */ = {
+		030F3E3ADD04A9B29E2A5647A31C8959 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2A24A21253EB7079176B4936F20A8631 /* fuikit.debug.xcconfig */;
+			baseConfigurationReference = 2AD8046C23EC5DDBA875E724670FB23C /* LithoOperators.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -725,52 +1035,18 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/fuikit/fuikit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/fuikit/fuikit-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LithoOperators/LithoOperators-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LithoOperators/LithoOperators-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/fuikit/fuikit.modulemap";
-				PRODUCT_MODULE_NAME = fuikit;
-				PRODUCT_NAME = fuikit;
+				MODULEMAP_FILE = "Target Support Files/LithoOperators/LithoOperators.modulemap";
+				PRODUCT_MODULE_NAME = LithoOperators;
+				PRODUCT_NAME = LithoOperators;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		3B4C8BA285626D0C8B79D77469C3C239 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A39136DA077E2CAF21FEA70486088A2F /* Pods-fuikit_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-fuikit_Example/Pods-fuikit_Example-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-fuikit_Example/Pods-fuikit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.3;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -778,13 +1054,11 @@
 			};
 			name = Release;
 		};
-		3D9FFEF2E7756173399929CCBF55C6EB /* Debug */ = {
+		34628E73F6DEB608DD4851BE27245ED4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DECE372A3D9B479DF59C3927CC3375A3 /* Pods-fuikit_Example.debug.xcconfig */;
+			baseConfigurationReference = 745A9307167912035205A41B4374E912 /* LithoOperators.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -793,19 +1067,49 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-fuikit_Example/Pods-fuikit_Example-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/LithoOperators/LithoOperators-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LithoOperators/LithoOperators-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-fuikit_Example/Pods-fuikit_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/LithoOperators/LithoOperators.modulemap";
+				PRODUCT_MODULE_NAME = LithoOperators;
+				PRODUCT_NAME = LithoOperators;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.3;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3A3FD916D580709A1F3CF2957EE5F578 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA23EDBB6DE365908F26D1E60733E05D /* Prelude.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Prelude/Prelude-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Prelude/Prelude-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Prelude/Prelude.modulemap";
+				PRODUCT_MODULE_NAME = Prelude;
+				PRODUCT_NAME = Prelude;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -849,7 +1153,7 @@
 		};
 		4F2EDC446D596382C603BC0D5C00788C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9468E867498BBAF36F9AFFE4845F8B09 /* FBSnapshotTestCase.debug.xcconfig */;
+			baseConfigurationReference = C65E57247C28BC2A41343D1743DA553A /* FBSnapshotTestCase.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -912,6 +1216,41 @@
 			};
 			name = Debug;
 		};
+		74097A147699D926CD98FB2EBD5A68D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A39136DA077E2CAF21FEA70486088A2F /* Pods-fuikit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-fuikit_Example/Pods-fuikit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-fuikit_Example/Pods-fuikit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		903A0004D3E6651EFD5D2E16214D101B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -967,7 +1306,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -1039,9 +1379,41 @@
 			};
 			name = Debug;
 		};
+		B870B908A3FED9035D9DD142B9960C62 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60FCA4B84CEE0CEC51F5C9E2D6769688 /* fuikit.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/fuikit/fuikit-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/fuikit/fuikit-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/fuikit/fuikit.modulemap";
+				PRODUCT_MODULE_NAME = fuikit;
+				PRODUCT_NAME = fuikit;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		D4205A4ADADF2F5456CB5CC65218B09E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C6513B09838318BD763CFD5390D1DE0 /* FBSnapshotTestCase.release.xcconfig */;
+			baseConfigurationReference = 584F2F4AEEFFED7D4702DF36CCF5B7D9 /* FBSnapshotTestCase.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -1071,9 +1443,9 @@
 			};
 			name = Release;
 		};
-		D8C624CFF16CD004C120BAF0E3377529 /* Release */ = {
+		E714D72F0BBF900DAFBA30ABA29D928B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28F4B902DC7905D6AD97A48D4A7E99BE /* fuikit.release.xcconfig */;
+			baseConfigurationReference = 308BEC9395BE39028FF391C180E0E536 /* fuikit.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1104,9 +1476,84 @@
 			};
 			name = Release;
 		};
+		EFFF9F7B33825C6029CDB15BFB5B09CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DECE372A3D9B479DF59C3927CC3375A3 /* Pods-fuikit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-fuikit_Example/Pods-fuikit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-fuikit_Example/Pods-fuikit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F352AB1D815FD4CDDBBD58088C75D461 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 948A933FE9626F648643F26DDBAEF25C /* Prelude.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Prelude/Prelude-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Prelude/Prelude-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Prelude/Prelude.modulemap";
+				PRODUCT_MODULE_NAME = Prelude;
+				PRODUCT_NAME = Prelude;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		17421EE0A0F12881249CB5B3B5AAC8D8 /* Build configuration list for PBXNativeTarget "fuikit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B870B908A3FED9035D9DD142B9960C62 /* Debug */,
+				E714D72F0BBF900DAFBA30ABA29D928B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1116,11 +1563,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8C6F9838E2F721624FA987EC3E18EC5C /* Build configuration list for PBXNativeTarget "fuikit" */ = {
+		7B47E018D32A2BA0A51E9FD098ACC3B0 /* Build configuration list for PBXNativeTarget "Prelude" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3952341C343DCAE6B97D6A9C90A39086 /* Debug */,
-				D8C624CFF16CD004C120BAF0E3377529 /* Release */,
+				3A3FD916D580709A1F3CF2957EE5F578 /* Debug */,
+				F352AB1D815FD4CDDBBD58088C75D461 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DE27641C7D61E499D1AE62110D517BE /* Build configuration list for PBXNativeTarget "LithoOperators" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34628E73F6DEB608DD4851BE27245ED4 /* Debug */,
+				030F3E3ADD04A9B29E2A5647A31C8959 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1134,11 +1590,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D923D11F4BED63612268F02013244937 /* Build configuration list for PBXNativeTarget "Pods-fuikit_Example" */ = {
+		E10AFAFDA0408B68D4E1EFA674D8481A /* Build configuration list for PBXNativeTarget "Pods-fuikit_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3D9FFEF2E7756173399929CCBF55C6EB /* Debug */,
-				3B4C8BA285626D0C8B79D77469C3C239 /* Release */,
+				EFFF9F7B33825C6029CDB15BFB5B09CC /* Debug */,
+				74097A147699D926CD98FB2EBD5A68D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
