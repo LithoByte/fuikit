@@ -115,6 +115,25 @@ public extension UIViewController {
     func tabDismissAnimated(_ vc: UIViewController) {
         vc.dismiss(animated: true, completion: nil)
     }
+    
+    @available(iOS 15.0, *)
+    func presentPageSheet(_ vc: UIViewController, detents: [UISheetPresentationController.Detent] = [.medium()]) {
+        let nav = UINavigationController(rootViewController: vc)
+        nav.modalPresentationStyle = .pageSheet
+        if let sheet = nav.sheetPresentationController {
+            sheet.detents = detents
+        }
+        self.presentAnimated(nav)
+    }
+    
+    @available(iOS 15.0, *)
+    func presentPageSheet(nav: UINavigationController, detents: [UISheetPresentationController.Detent] = [.medium()]) {
+        nav.modalPresentationStyle = .pageSheet
+        if let sheet = nav.sheetPresentationController {
+            sheet.detents = detents
+        }
+        self.presentAnimated(nav)
+    }
 }
 
 public func pushAnimated<T>(_ pusher: T, _ pushee: UIViewController) where T: UIViewController {
@@ -189,5 +208,20 @@ public func tabPopToRootAndSwitch(_ vc: UIViewController, index: Int) {
     if let nav = vc.tabBarController?.navigationController, let tab = nav.viewControllers.first as? UITabBarController {
         nav.popToRootViewController(animated: true)
         tab.selectedIndex = index
+    }
+}
+
+@available(iOS 15.0, *) public extension UIViewController {
+    func presentClosurePageSheet(nav: UINavigationController, detents: [UISheetPresentationController.Detent] = [.medium()]) -> (UIViewController) -> Void {
+        return { [weak self] vc in
+            nav.setViewControllers([vc], animated: true)
+            self?.presentPageSheet(nav: nav, detents: detents)
+        }
+    }
+    
+    func presentClosurePageSheet(detents: [UISheetPresentationController.Detent] = [.medium()]) -> (UIViewController) -> Void {
+        return { [weak self] vc in
+            self?.presentPageSheet(vc, detents: detents)
+        }
     }
 }
