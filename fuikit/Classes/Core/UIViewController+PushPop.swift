@@ -127,12 +127,12 @@ public extension UIViewController {
     }
     
     @available(iOS 15.0, *)
-    func presentPageSheet(nav: UINavigationController, detents: [UISheetPresentationController.Detent] = [.medium()]) {
-        nav.modalPresentationStyle = .pageSheet
-        if let sheet = nav.sheetPresentationController {
+    func presentPageSheet(nav: UINavigationController?, detents: [UISheetPresentationController.Detent] = [.medium()]) {
+        nav?.modalPresentationStyle = .pageSheet
+        if let nav = nav, let sheet = nav.sheetPresentationController {
             sheet.detents = detents
+            self.presentAnimated(nav)
         }
-        self.presentAnimated(nav)
     }
 }
 
@@ -213,8 +213,8 @@ public func tabPopToRootAndSwitch(_ vc: UIViewController, index: Int) {
 
 @available(iOS 15.0, *) public extension UIViewController {
     func presentClosurePageSheet(nav: UINavigationController, detents: [UISheetPresentationController.Detent] = [.medium()]) -> (UIViewController) -> Void {
-        return { [weak self] vc in
-            nav.setViewControllers([vc], animated: true)
+        return { [weak self, weak nav] vc in
+            nav?.setViewControllers([vc], animated: true)
             self?.presentPageSheet(nav: nav, detents: detents)
         }
     }
