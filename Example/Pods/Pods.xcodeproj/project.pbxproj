@@ -19,6 +19,7 @@
 		1944331B7E88394BD56764A638D0639F /* FCBCentralManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B458107E3B5739299955AE86EF445 /* FCBCentralManagerDelegate.swift */; };
 		1D6AE58C3569128D2B4951F16D044EC2 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A45FD582D305FCFD50F437D88767154 /* Prelude.framework */; };
 		22FE51B673499670609B1378F06791C2 /* LithoOperators-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F547809413131BB7815D03ED32E0457 /* LithoOperators-dummy.m */; };
+		232D2CF4271E36B200082997 /* UIViewController+AnimatedPresent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 232D2CF3271E36B200082997 /* UIViewController+AnimatedPresent.swift */; };
 		2CC6C6BF63E07A4C0B3F032B59AA0AEB /* FPUISearchBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BEA3573560007BA9D82F7FF820EF1C /* FPUISearchBarDelegate.swift */; };
 		2CCAB4DD4D017B8B7C9473022A91FA0D /* Fix.swift in Sources */ = {isa = PBXBuildFile; fileRef = F221D8C43D7DA3A7CB2B8D1CFCAD859B /* Fix.swift */; };
 		2DCFF0CE0BD295F1D46D3247F36B192C /* UIImage+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED0D0CD571FF3AE630221ADD9DB2A0D /* UIImage+Compare.m */; };
@@ -154,6 +155,7 @@
 		1F2863022812C1C8F0C969FAF1A3E4FF /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		212E2C31324EC69132735B77E7296CCB /* Pods-fuikit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fuikit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		22780B2455E23EDC08540199F2D3159C /* fuikit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = fuikit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		232D2CF3271E36B200082997 /* UIViewController+AnimatedPresent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+AnimatedPresent.swift"; sourceTree = "<group>"; };
 		2539CBC46DCAA0C4AB787901A0CF976F /* FBSnapshotTestCase-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FBSnapshotTestCase-Info.plist"; sourceTree = "<group>"; };
 		28536DB7C38A1F2E1139E9B6D173B8AD /* Flip.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Flip.swift; path = Prelude/Flip.swift; sourceTree = "<group>"; };
 		2948084695C92132578B48199089C78E /* FUIFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FUIFunctions.swift; sourceTree = "<group>"; };
@@ -561,6 +563,7 @@
 				B3F7BD5E5FABCD24C4BFA5C69ECFF336 /* FPUIViewController.swift */,
 				2948084695C92132578B48199089C78E /* FUIFunctions.swift */,
 				DE41FB2532016922796EE904629C9E4B /* UIViewController+PushPop.swift */,
+				232D2CF3271E36B200082997 /* UIViewController+AnimatedPresent.swift */,
 			);
 			name = Core;
 			path = fuikit/Classes/Core;
@@ -970,6 +973,7 @@
 				3578D6B55650BB12818200C28BBD0696 /* FPUITableViewDelegate.swift in Sources */,
 				734ED8EDA601C8E6673B60EF800C3F21 /* FPUITableViewViewController.swift in Sources */,
 				58EAF2E25E9BD251CA47E29D572B21FD /* FPUITextFieldDelegate.swift in Sources */,
+				232D2CF4271E36B200082997 /* UIViewController+AnimatedPresent.swift in Sources */,
 				E52F0595EEE8D98621F56D03140C67CD /* FPUITextViewDelegate.swift in Sources */,
 				C87B5302C37EDD872448F6A9E7CA0FD0 /* FPUIViewController.swift in Sources */,
 				64C1003126F27D7C00683D1F /* FPUIPickerViewDataSource.swift in Sources */,
