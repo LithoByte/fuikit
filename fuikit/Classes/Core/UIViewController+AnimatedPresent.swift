@@ -13,7 +13,7 @@ public extension UIViewController {
         return { [weak self] view in
             let size = view.frame.size
             let center = self?.view.center ?? CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY)
-            view.frame = CGRect(x: center.x, y: -1 * size.height, width: size.width, height: size.height)
+            view.frame = CGRect(x: view.frame.minX, y: -1 * size.height, width: size.width, height: size.height)
             let dy = center.y - view.center.y
             self?.view.addSubview(view)
             DispatchQueue.main.async {
@@ -26,7 +26,7 @@ public extension UIViewController {
         return { [weak self] view in
             let size = view.frame.size
             let center = self?.view.center ?? CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY)
-            view.frame = CGRect(x: center.x, y: UIScreen.main.bounds.height, width: size.width, height: size.height)
+            view.frame = CGRect(x: view.frame.minX, y: UIScreen.main.bounds.height, width: size.width, height: size.height)
             let dy = view.center.y - center.y
             self?.view.addSubview(view)
             DispatchQueue.main.async {
