@@ -14,7 +14,7 @@ public extension UIViewController {
             let size = view.frame.size
             let center = self?.view.center ?? CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY)
             view.frame = CGRect(x: view.frame.minX, y: -1 * size.height, width: size.width, height: size.height)
-            let dy = center.y - view.center.y
+            let dy = (center.y - (size.height / 2)) - view.frame.minY
             self?.view.addSubview(view)
             DispatchQueue.main.async {
                 UIView.animate(withDuration: duration, animations: view *> shiftViewDown(by: dy))
