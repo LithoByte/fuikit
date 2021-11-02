@@ -12,7 +12,7 @@ public extension UIViewController {
     func animateTopDown(duration: Double = 1.0) -> (UIView) -> Void {
         return { [weak self] view in
             let size = view.frame.size
-            let center = self?.view.center ?? CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY)
+            let center = self != nil ? CGPoint(x: self!.view.bounds.midX, y: self!.view.bounds.midY) : CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY)
             view.frame = CGRect(x: view.frame.minX, y: -1 * size.height, width: size.width, height: size.height)
             let dy = (center.y - (size.height / 2)) - view.frame.minY
             self?.view.addSubview(view)
@@ -25,7 +25,7 @@ public extension UIViewController {
     func animateBottomUp(duration: Double = 1.0) -> (UIView) -> Void {
         return { [weak self] view in
             let size = view.frame.size
-            let center = self?.view.center ?? CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY)
+            let center = self != nil ? CGPoint(x: self!.view.bounds.midX, y: self!.view.bounds.midY) : CGPoint(x: UIScreen.main.bounds.midX, y: UIScreen.main.bounds.midY)
             view.frame = CGRect(x: view.frame.minX, y: UIScreen.main.bounds.height, width: size.width, height: size.height)
             let dy = view.center.y - center.y
             self?.view.addSubview(view)
