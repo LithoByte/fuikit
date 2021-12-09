@@ -61,6 +61,7 @@
 		A7FD77A3DC98E79D5A7FF6B92B99A1A0 /* FPUITableViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 90CF31837BB0D5FC0265F9D65D12EE86 /* FPUITableViewViewController.xib */; };
 		AA4A56BF94736C43227C24F4638D8962 /* LithoOperators-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D0557609E3A462E1749772DDAEC2F9C5 /* LithoOperators-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD035CF42753D840002ABD05 /* FPUIScrollViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD035CF32753D840002ABD05 /* FPUIScrollViewDelegate.swift */; };
+		ADA57F812760FAAF0003D15C /* FPUITabBarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADA57F802760FAAF0003D15C /* FPUITabBarControllerDelegate.swift */; };
 		B5ACB6AB2A8167B7114433515CE79AC9 /* FCBPeripheralManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B1FB693D67EBC7D7669A7C72670B2A /* FCBPeripheralManager.swift */; };
 		B74CD6E6EBEA0B642776BCB37850415D /* UIImage+Snapshot.h in Headers */ = {isa = PBXBuildFile; fileRef = 78E9E10E1BF528E94480449B16B12BDC /* UIImage+Snapshot.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		BBCA657482AD04BC47468292BB256306 /* Compose.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDE0D0C272480F9A489CB461B9C91F4F /* Compose.swift */; };
@@ -219,6 +220,7 @@
 		AB49AA9EB707A81608A2F9D75BB75CA5 /* Pods-fuikit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-fuikit_Example-frameworks.sh"; sourceTree = "<group>"; };
 		ABAF7B191E1FF8709C434AAF4508ACD2 /* Pods_fuikit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fuikit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD035CF32753D840002ABD05 /* FPUIScrollViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPUIScrollViewDelegate.swift; sourceTree = "<group>"; };
+		ADA57F802760FAAF0003D15C /* FPUITabBarControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FPUITabBarControllerDelegate.swift; sourceTree = "<group>"; };
 		B3F7BD5E5FABCD24C4BFA5C69ECFF336 /* FPUIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUIViewController.swift; sourceTree = "<group>"; };
 		B5B77A5E3EFF3E8619CBCE13E8E0EAAE /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
 		B620848EA0F4BD801F45F5D63407356A /* Pods-fuikit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fuikit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -558,6 +560,7 @@
 				A8DC7A366D1160462945EF0C23C7F64D /* FPUITableViewDataSource.swift */,
 				D66C0F877111F4A412411B605E2D5F00 /* FPUITableViewDelegate.swift */,
 				AD035CF32753D840002ABD05 /* FPUIScrollViewDelegate.swift */,
+				ADA57F802760FAAF0003D15C /* FPUITabBarControllerDelegate.swift */,
 				99E062027663C9446212D146E630AB67 /* FPUITableViewViewController.swift */,
 				7DB9B40CBF6DD74790C64E82AE5419A9 /* FPUITextFieldDelegate.swift */,
 				D29EDAEFD6E8FF3167C25F4F4A12494B /* FPUITextViewDelegate.swift */,
@@ -967,6 +970,7 @@
 				AD035CF42753D840002ABD05 /* FPUIScrollViewDelegate.swift in Sources */,
 				820DD2EBE12A4E43E8BA93A699D865BF /* FPUICollectionViewDelegate.swift in Sources */,
 				64C1003026F27D7C00683D1F /* FPUIPickerViewDelegate.swift in Sources */,
+				ADA57F812760FAAF0003D15C /* FPUITabBarControllerDelegate.swift in Sources */,
 				8A92B5FE51CB63AC68078EF227C1D452 /* FPUICollectionViewViewController.swift in Sources */,
 				BF4940E975AD85222D242A978FA2E84F /* FPUIImagePickerDelegate.swift in Sources */,
 				2CC6C6BF63E07A4C0B3F032B59AA0AEB /* FPUISearchBarDelegate.swift in Sources */,
