@@ -14,7 +14,7 @@ open class FPUICollectionViewDatasource: NSObject, UICollectionViewDataSource {
     open var onViewForSupplementaryElementOfKind: (UICollectionView, String, IndexPath) -> UICollectionReusableView = {_, _, _ in return UICollectionReusableView()}
     open var onCanMoveItemAt: (UICollectionView, IndexPath) -> Bool = { _, _ in return false }
     open var onMoveItemAtToDestination: (UICollectionView, IndexPath, IndexPath) -> Void = {_, _, _ in }
-    open var onIndexTitlesFor: ((UICollectionView) -> [String]?)?
+    open var onIndexTitlesFor: (UICollectionView) -> [String]? = {_ in return [String]() }
     open var onIndexPathForIndexTitle: (UICollectionView, String, Int) -> IndexPath = {_, _, _ in return IndexPath()}
     
     public init(
@@ -24,7 +24,7 @@ open class FPUICollectionViewDatasource: NSObject, UICollectionViewDataSource {
         onViewForSupplementaryElementOfKind: @escaping (UICollectionView, String, IndexPath) -> UICollectionReusableView = {_, _, _ in return UICollectionReusableView()},
         onCanMoveItemAt: @escaping (UICollectionView, IndexPath) -> Bool = {_, _ in return false },
         onMoveItemAtToDestination: @escaping (UICollectionView, IndexPath, IndexPath) -> Void = { _, _, _ in},
-        onIndexTitlesFor: ((UICollectionView) -> [String]?)?,
+        onIndexTitlesFor: @escaping (UICollectionView) -> [String]? = { _ in [String]() },
         onIndexPathForIndexTitle: @escaping (UICollectionView, String, Int) -> IndexPath = {_, _, _ in return IndexPath() }
     ){
         self.onNumberOfItemsInSections = onNumberOfItemsInSections
@@ -56,7 +56,7 @@ open class FPUICollectionViewDatasource: NSObject, UICollectionViewDataSource {
         onMoveItemAtToDestination(collectionView, sourceIndexPath, destinationIndexPath)
     }
     open func indexTitles(for collectionView: UICollectionView) -> [String]? {
-        onIndexTitlesFor!(collectionView)
+        onIndexTitlesFor(collectionView)
     }
     open func collectionView(_ collectionView: UICollectionView, indexPathForIndexTitle title: String, at index: Int) -> IndexPath {
         onIndexPathForIndexTitle(collectionView, title, index)
