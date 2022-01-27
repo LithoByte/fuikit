@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 open class FPUICollectionViewDelegate: NSObject, UICollectionViewDelegate {
     public var onDidHighlightItemAt: ((UICollectionView, IndexPath) -> Void)?
