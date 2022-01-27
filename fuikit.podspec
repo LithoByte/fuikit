@@ -32,20 +32,20 @@ For instance, instead of subclassing UIViewController, you could use FUIViewCont
 
   s.ios.deployment_target = '11.0'
 
-  s.source_files = 'fuikit/Classes/**/*.swift'
+  s.source_files = 'Sources/fuikit/Classes/**/*.swift'
   s.resources = 'fuikit/**/*.xib'
   s.dependency 'LithoOperators'
   
   s.subspec 'Core' do |core|
-    core.source_files = 'fuikit/Classes/Core/**/*.swift'
-    core.resources = 'fuikit/Classes/Core/**/*.xib'
+    core.source_files = 'Sources/fuikit/Classes/Core/**/*.swift'
+    core.resources = 'Sources/fuikit/Classes/Core/**/*.xib'
   end
   
   s.subspec 'CoreLocation' do |cll|
-    cll.source_files = 'fuikit/Classes/FCL/*.swift'
+    cll.source_files = 'Sources/fuikit/Classes/FCL/*.swift'
   end
   
   s.subspec 'CoreBluetooth' do |cb|
-    cb.source_files = 'fuikit/Classes/FCB/*.swift'
+    cb.source_files = 'Sources/fuikit/Classes/FCB/*.swift'
   end
 end
