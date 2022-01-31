@@ -139,7 +139,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01C063FC733D027618B6BD739D69B7E9 /* fuikit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fuikit-umbrella.h"; sourceTree = "<group>"; };
+		01C063FC733D027618B6BD739D69B7E9 /* fuikit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "fuikit-umbrella.h"; path = "fuikit/fuikit-umbrella.h"; sourceTree = "<group>"; };
 		02B9575BFBF47967D72DDA42115B1614 /* Curry.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Curry.swift; path = Prelude/Curry.swift; sourceTree = "<group>"; };
 		05CCBD26FFC6615DF06E4F4EAA7210CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		08A7FDB617B2A77799F7B7E3ED5A2CAF /* FCBPeripheralManagerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FCBPeripheralManagerDelegate.swift; sourceTree = "<group>"; };
@@ -152,7 +152,7 @@
 		19167D9FBAF65277FF729BF23E230B59 /* Application.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Application.swift; path = Prelude/Application.swift; sourceTree = "<group>"; };
 		198A43EB1DCB0B15BA5CBBC8E68F0DFA /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
 		19A3EA8A9BFCC6FEB5239999EEFB7D4A /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		1E8451D54C0FF6A44AF66B85A7F57738 /* fuikit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "fuikit-dummy.m"; sourceTree = "<group>"; };
+		1E8451D54C0FF6A44AF66B85A7F57738 /* fuikit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "fuikit-dummy.m"; path = "fuikit/fuikit-dummy.m"; sourceTree = "<group>"; };
 		1F2863022812C1C8F0C969FAF1A3E4FF /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
 		212E2C31324EC69132735B77E7296CCB /* Pods-fuikit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-fuikit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		22780B2455E23EDC08540199F2D3159C /* fuikit.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = fuikit.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -161,11 +161,11 @@
 		2948084695C92132578B48199089C78E /* FUIFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FUIFunctions.swift; sourceTree = "<group>"; };
 		2AD8046C23EC5DDBA875E724670FB23C /* LithoOperators.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LithoOperators.release.xcconfig; sourceTree = "<group>"; };
 		2B9A56443321B4CC6B8EBF8A771C3AA2 /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		308BEC9395BE39028FF391C180E0E536 /* fuikit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fuikit.release.xcconfig; sourceTree = "<group>"; };
+		308BEC9395BE39028FF391C180E0E536 /* fuikit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = fuikit.release.xcconfig; path = fuikit/fuikit.release.xcconfig; sourceTree = "<group>"; };
 		33D2A25ABF91DCCC5D553354F2FE541D /* Tuple.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Tuple.swift; path = Prelude/Tuple.swift; sourceTree = "<group>"; };
 		37C55777A2AF7892A3CF777A2D4DE21C /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
 		3844B3018A5011CB7C2CAB544E15B88A /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		38B5A40BF86D75EAF7358F31D1E1EB9C /* fuikit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "fuikit-prefix.pch"; sourceTree = "<group>"; };
+		38B5A40BF86D75EAF7358F31D1E1EB9C /* fuikit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "fuikit-prefix.pch"; path = "fuikit/fuikit-prefix.pch"; sourceTree = "<group>"; };
 		3CC6F37BBE1E2DF52C4D33E5FE647B1A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
 		418944CDE746607A96966A4E634275CF /* Comparables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Comparables.swift; path = Sources/LithoOperators/Classes/Comparables.swift; sourceTree = "<group>"; };
 		43C638B917422BFFCEAA43E3ABF7E90B /* Pods-fuikit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-fuikit_Tests.modulemap"; sourceTree = "<group>"; };
@@ -184,7 +184,7 @@
 		5ED0D0CD571FF3AE630221ADD9DB2A0D /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
 		5F0FD9C79217C14AA3D748C047DB07EB /* Prelude-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Prelude-Info.plist"; sourceTree = "<group>"; };
 		60C209740266D6B2F13B887564C529C9 /* Try.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Try.swift; path = Sources/LithoOperators/Classes/Try.swift; sourceTree = "<group>"; };
-		60FCA4B84CEE0CEC51F5C9E2D6769688 /* fuikit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = fuikit.debug.xcconfig; sourceTree = "<group>"; };
+		60FCA4B84CEE0CEC51F5C9E2D6769688 /* fuikit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = fuikit.debug.xcconfig; path = fuikit/fuikit.debug.xcconfig; sourceTree = "<group>"; };
 		622268607B472C5EDD0EA8577B100034 /* FPUICollectionViewDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUICollectionViewDelegate.swift; sourceTree = "<group>"; };
 		64C1002E26F27D7C00683D1F /* FPUIPickerViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPUIPickerViewDelegate.swift; sourceTree = "<group>"; };
 		64C1002F26F27D7C00683D1F /* FPUIPickerViewDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FPUIPickerViewDataSource.swift; sourceTree = "<group>"; };
@@ -197,14 +197,14 @@
 		74BC18399BAB520AB656B8536A67D162 /* Pods-fuikit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fuikit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		78E9E10E1BF528E94480449B16B12BDC /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
 		7C9A434B78A28F8B411BAAD644FFF2C2 /* Arrays.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Arrays.swift; path = Sources/LithoOperators/Classes/Arrays.swift; sourceTree = "<group>"; };
-		7CE7628AC8A6CDDFBD4948C84E583236 /* fuikit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "fuikit-Info.plist"; sourceTree = "<group>"; };
+		7CE7628AC8A6CDDFBD4948C84E583236 /* fuikit-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "fuikit-Info.plist"; path = "fuikit/fuikit-Info.plist"; sourceTree = "<group>"; };
 		7DB9B40CBF6DD74790C64E82AE5419A9 /* FPUITextFieldDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUITextFieldDelegate.swift; sourceTree = "<group>"; };
 		7E93F17BD1C7C4B3805F662C9394FDB2 /* Pods-fuikit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-fuikit_Tests-dummy.m"; sourceTree = "<group>"; };
 		89552B38982338FDC23A65A7FC895F0E /* FCLLocationManagerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FCLLocationManagerDelegate.swift; sourceTree = "<group>"; };
 		8A54BE4C66F5A9438EA12BB7F706D991 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
 		8C5116EE8724DBEC3BE2B824296AD37D /* Prelude-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Prelude-umbrella.h"; sourceTree = "<group>"; };
 		901BA713FD4AFD2744F97CE9CACE13EE /* LithoOperators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LithoOperators.swift; path = Sources/LithoOperators/Classes/LithoOperators.swift; sourceTree = "<group>"; };
-		90CF31837BB0D5FC0265F9D65D12EE86 /* FPUITableViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FPUITableViewViewController.xib; path = fuikit/Classes/Core/FPUITableViewViewController.xib; sourceTree = "<group>"; };
+		90CF31837BB0D5FC0265F9D65D12EE86 /* FPUITableViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FPUITableViewViewController.xib; path = Classes/Core/FPUITableViewViewController.xib; sourceTree = "<group>"; };
 		948A933FE9626F648643F26DDBAEF25C /* Prelude.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Prelude.release.xcconfig; sourceTree = "<group>"; };
 		94FC401755D75E784216596117624F70 /* Pods_fuikit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_fuikit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		99E062027663C9446212D146E630AB67 /* FPUITableViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUITableViewViewController.swift; sourceTree = "<group>"; };
@@ -248,9 +248,9 @@
 		DECE372A3D9B479DF59C3927CC3375A3 /* Pods-fuikit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-fuikit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		DF8B665455118A5EC3F61F66C3E11666 /* Prelude.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Prelude.modulemap; sourceTree = "<group>"; };
 		E5346657218E665D7AA98C1EF0407AF9 /* Pods-fuikit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-fuikit_Example-umbrella.h"; sourceTree = "<group>"; };
-		E9DDD902580A7AB9A8A6155699D277F3 /* fuikit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = fuikit.modulemap; sourceTree = "<group>"; };
+		E9DDD902580A7AB9A8A6155699D277F3 /* fuikit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = fuikit.modulemap; path = fuikit/fuikit.modulemap; sourceTree = "<group>"; };
 		EA4C86CC5E7410229C9923E8BDDCA5AD /* FPUICollectionViewViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FPUICollectionViewViewController.swift; sourceTree = "<group>"; };
-		EB182B2DB0F79A633719B23DF4CCA3BB /* FPUICollectionViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FPUICollectionViewViewController.xib; path = fuikit/Classes/Core/FPUICollectionViewViewController.xib; sourceTree = "<group>"; };
+		EB182B2DB0F79A633719B23DF4CCA3BB /* FPUICollectionViewViewController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = FPUICollectionViewViewController.xib; path = Classes/Core/FPUICollectionViewViewController.xib; sourceTree = "<group>"; };
 		F02BB82B3FFD1B4A5BE1C7443584444C /* LithoOperators.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LithoOperators.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F221D8C43D7DA3A7CB2B8D1CFCAD859B /* Fix.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Fix.swift; path = Prelude/Fix.swift; sourceTree = "<group>"; };
 		F225DF1D0A8FDE58EE8E067753CD4C79 /* Pods-fuikit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-fuikit_Example-Info.plist"; sourceTree = "<group>"; };
@@ -412,7 +412,7 @@
 				89552B38982338FDC23A65A7FC895F0E /* FCLLocationManagerDelegate.swift */,
 			);
 			name = FCL;
-			path = fuikit/Classes/FCL;
+			path = Classes/FCL;
 			sourceTree = "<group>";
 		};
 		6E78227B00330C5346180821F67C73EF /* Development Pods */ = {
@@ -504,7 +504,7 @@
 				A7B9400082E632725BFC1590D446CAE2 /* Support Files */,
 			);
 			name = fuikit;
-			path = ../..;
+			path = ../../Sources/fuikit;
 			sourceTree = "<group>";
 		};
 		A780697BAF32DB7AACB74DC17AF68748 /* FCB */ = {
@@ -515,7 +515,7 @@
 				08A7FDB617B2A77799F7B7E3ED5A2CAF /* FCBPeripheralManagerDelegate.swift */,
 			);
 			name = FCB;
-			path = fuikit/Classes/FCB;
+			path = Classes/FCB;
 			sourceTree = "<group>";
 		};
 		A7B9400082E632725BFC1590D446CAE2 /* Support Files */ = {
@@ -530,7 +530,7 @@
 				308BEC9395BE39028FF391C180E0E536 /* fuikit.release.xcconfig */,
 			);
 			name = "Support Files";
-			path = "Example/Pods/Target Support Files/fuikit";
+			path = "../../Example/Pods/Target Support Files";
 			sourceTree = "<group>";
 		};
 		BCE4D87A117455ADD31943D6D2F0809E /* SwiftSupport */ = {
@@ -569,7 +569,7 @@
 				DE41FB2532016922796EE904629C9E4B /* UIViewController+PushPop.swift */,
 			);
 			name = Core;
-			path = fuikit/Classes/Core;
+			path = Classes/Core;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
