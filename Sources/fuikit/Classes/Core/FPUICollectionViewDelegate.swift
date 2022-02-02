@@ -18,7 +18,6 @@ import UIKit
     public var onDidEndDisplayingCellForItemAt: ((UICollectionView, UICollectionViewCell, IndexPath) -> Void)?
     public var onDidEndDisplayingSupplementaryView: ((UICollectionView, UICollectionReusableView, String, IndexPath) -> Void)?
     public var onDidUpdateFocusIn: ((UICollectionView, UICollectionViewFocusUpdateContext, UIFocusAnimationCoordinator) -> Void)?
-    // -MARK: ScrollView Methods Added
     public var onScrollViewDidScroll: (UIScrollView) -> Void = { _ in }
     public var onScrollViewWillBeginDragging: (UIScrollView) -> Void = { _ in }
     public var onScrollViewWillEndDragging: (UIScrollView, CGPoint, UnsafeMutablePointer<CGPoint>) -> Void = { _, _, _ in }
@@ -35,7 +34,6 @@ import UIKit
     public var onScrollViewDidChangeAdjustedContentInset: (UIScrollView) -> Void = { _ in }
     
     public init(
-        //-MARK: ScrollView Initializer Methods
             onScrollViewDidScroll: @escaping (UIScrollView) -> Void = { _ in },
             onScrollViewWillBeginDragging: @escaping (UIScrollView) -> Void = { _ in },
             onScrollViewWillEndDragging: @escaping (UIScrollView, CGPoint, UnsafeMutablePointer<CGPoint>) -> Void = { _, _, _ in },
@@ -51,7 +49,6 @@ import UIKit
             onScrollViewDidEndScrollingAnimation: @escaping (UIScrollView) -> Void = { _ in },
             onScrollViewDidChangeAdjustedContentInset: @escaping (UIScrollView) -> Void = { _ in }
     ){
-        //-MARK: ScrollView Initialization
         self.onScrollViewDidScroll = onScrollViewDidScroll
         self.onScrollViewWillBeginDragging = onScrollViewWillBeginDragging
         self.onScrollViewWillEndDragging = onScrollViewWillEndDragging
