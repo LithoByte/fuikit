@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 @objc open class FPUICollectionViewDatasource: NSObject, UICollectionViewDataSource, UIScrollViewDelegate {
     open var onNumberOfItemsInSections: (UICollectionView, Int) -> Int = { _, _ in return 0 }
